@@ -1,0 +1,792 @@
+Date,Plot,Site,Initials,Quadrat,Type of Plant,Hardwood or Softwood?,Species,Count,Cover Estimate,Invasive?,Notes,Fall
+8/8/24,1,Colby Arboretum,RW,1,Graminoid,NA,Carex sp.,11,3,N,,N
+8/8/24,1,Colby Arboretum,RW,1,Seedling,NA,FRAAME,9,15,N,,N
+8/8/24,1,Colby Arboretum,RW,1,Seedling,NA,ACERUB,1,2,N,,N
+8/8/24,1,Colby Arboretum,RW,2,Seedling,NA,FRAAME,36,35,N,,N
+8/8/24,1,Colby Arboretum,RW,2,Seedling,NA,ACERUB,3,2,N,,N
+8/8/24,1,Colby Arboretum,RW,2,Shrub,NA,VIBLEN,1,1,N,,N
+8/8/24,1,Colby Arboretum,RW,3,Seedling,Hardwood,FRAAME,21,30,N,,N
+8/8/24,1,Colby Arboretum,RW,3,Herb,NA,MAICAN,6,30,N,,N
+8/8/24,1,Colby Arboretum,RW,3,Seedling,NA,ACERUB,1,6,N,,N
+8/8/24,1,Colby Arboretum,RW,4,Seedling,NA,FRAAME,14,2,N,,N
+8/8/24,1,Colby Arboretum,RW,4,Herb,NA,MAICAN,4,15,N,,N
+8/8/24,1,Colby Arboretum,RW,4,Herb,NA,SYLAT,1,3,N,,N
+8/11/24,1,Little Moose,RW,1,Seedling,NA,Acer sp.,2,1,N,,N
+8/11/24,1,Little Moose,RW,1,Herb,NA,MAICAN,2,2,N,,N
+8/11/24,1,Little Moose,RW,1,Herb,NA,CYAC3,1,5,N,,N
+8/11/24,1,Little Moose,RW,1,Herb,NA,MOUN3,1,0.5,N,,N
+8/11/24,1,Little Moose,RW,1,Seedling,NA,Betula sp.,1,0.5,N,,N
+8/11/24,1,Little Moose,RW,2,Seedling,NA,Acer sp.,4,4,N,,N
+8/11/24,1,Little Moose,RW,2,Seedling,NA,ABIBAL,2,1,N,,N
+8/11/24,1,Little Moose,RW,2,Seedling,NA,PICRUB,1,0.5,N,,N
+8/11/24,1,Little Moose,RW,3,Seedling,NA,Acer sp.,3,2,N,,N
+8/11/24,1,Little Moose,RW,4,Seedling,NA,Acer sp.,2,1,N,,N
+8/18/24,1,Bradley,RW,1,NA,NA,NA,NA,NA,NA,,N
+8/18/24,1,Bradley,RW,2,NA,NA,NA,NA,NA,NA,,N
+8/18/24,1,Bradley,RW,3,NA,NA,NA,NA,NA,NA,,N
+8/18/24,1,Bradley,RW,4,NA,NA,NA,NA,NA,NA,,N
+8/18/24,2,Bradley,RW,1,Herb,NA,MAICAN,47,10,N,,N
+8/18/24,2,Bradley,RW,1,Herb,NA,LYSBOR,9,8,N,,N
+8/18/24,2,Bradley,RW,1,Seedling,NA,ABIBAL,2,10,N,,N
+8/18/24,2,Bradley,RW,1,Graminoid,NA,Poaceae sp.,1,5,N,,N
+8/18/24,2,Bradley,RW,2,Herb,NA,MAICAN,42,10,N,,N
+8/18/24,2,Bradley,RW,2,Herb,NA,LYSBOR,3,8,N,,N
+8/18/24,2,Bradley,RW,2,Seedling,NA,ABIBAL,1,1,N,,N
+8/18/24,2,Bradley,RW,2,Seedling,NA,PINSTR,1,3,N,,N
+8/18/24,2,Bradley,RW,2,Graminoid,NA,Carex sp.,1,1,Y,crabgrass,N
+8/18/24,2,Bradley,RW,3,Herb,NA,MAICAN,75,20,N,,N
+8/18/24,2,Bradley,RW,3,Herb,NA,LYSBOR,6,10,N,,N
+8/18/24,2,Bradley,RW,3,Seedling,Softwood,PINSTR,1,8,N,,N
+8/18/24,2,Bradley,RW,4,Herb,NA,MAICAN,33,10,N,,N
+8/18/24,2,Bradley,RW,4,Herb,NA,LYSBOR,3,3,N,,N
+8/18/24,2,Bradley,RW,4,Seedling,NA,PINSTR,1,3,N,,N
+8/18/24,2,Bradley,RW,4,Graminoid,NA,Poaceae sp.,1,1,N,,N
+8/19/24,1,Sebago Lake,RW,1,NA,NA,NA,NA,NA,NA,,N
+8/19/24,1,Sebago Lake,RW,2,Seedling,Hardwood,QUERUB,1,3,N,,N
+8/19/24,1,Sebago Lake,RW,3,NA,NA,NA,NA,NA,NA,,N
+8/19/24,1,Sebago Lake,RW,4,Seedling,NA,ACERUB,1,1,N,,N
+8/19/24,2,Sebago Lake,RW,1,Seedling,NA,PINSTR,2,2,N,,N
+8/19/24,2,Sebago Lake,RW,2,Herb,NA,PTEAQU,1,3,N,,N
+8/19/24,2,Sebago Lake,RW,2,Seedling,NA,QUERUB,1,2,N,,N
+8/19/24,2,Sebago Lake,RW,3,Seedling,NA,ACERUB,3,2,N,,N
+8/19/24,2,Sebago Lake,RW,3,Herb,NA,Solidago sp.,2,3,N,,N
+8/19/24,2,Sebago Lake,RW,3,Woody Vine,NA,CELORB,1,2,Y,,N
+8/19/24,2,Sebago Lake,RW,4,Seedling,NA,PINSTR,2,2,N,,N
+8/19/24,2,Sebago Lake,RW,4,Seedling,NA,ACERUB,5,2,N,,N
+8/19/24,3,Sebago Lake,RW,1,Herb,NA,PTEAQU,2,30,N,,N
+8/19/24,3,Sebago Lake,RW,1,Seedling,NA,PINSTR,3,5,N,,N
+8/19/24,3,Sebago Lake,RW,1,Herb,NA,GAUPRO,3,5,N,,N
+8/19/24,3,Sebago Lake,RW,1,Graminoid,NA,Poaceae sp.,9,8,N,,N
+8/19/24,3,Sebago Lake,RW,1,Seedling,NA,ACERUB,4,3,N,,N
+8/19/24,3,Sebago Lake,RW,2,Shrub,NA,VACANG,4,25,N,,N
+8/19/24,3,Sebago Lake,RW,2,Seedling,NA,ACERUB,2,2,N,,N
+8/19/24,3,Sebago Lake,RW,2,Herb,NA,GAUPRO,3,4,N,,N
+8/19/24,3,Sebago Lake,RW,2,Graminoid,NA,Poaceae sp.,7,10,N,,N
+8/19/24,3,Sebago Lake,RW,2,Seedling,NA,PINSTR,1,1,N,,N
+8/19/24,3,Sebago Lake,RW,3,Herb,NA,MOUN3,2,2,N,,N
+8/19/24,3,Sebago Lake,RW,3,Shrub,NA,VACANG,5,20,N,,N
+8/19/24,3,Sebago Lake,RW,3,Seedling,NA,ACERUB,1,1,N,,N
+8/19/24,3,Sebago Lake,RW,3,Seedling,NA,PINSTR,4,3,N,,N
+8/19/24,3,Sebago Lake,RW,3,Graminoid,NA,Poaceae sp.,7,5,N,,N
+8/19/24,3,Sebago Lake,RW,3,Shrub,NA,VACANG,2,2,N,,N
+8/19/24,3,Sebago Lake,RW,4,Shrub,NA,VACANG,4,15,N,,N
+8/19/24,3,Sebago Lake,RW,4,Graminoid,NA,Poaceae sp.,5,5,N,,N
+8/19/24,3,Sebago Lake,RW,4,Seedling,NA,PINSTR,2,4,N,,N
+8/19/24,3,Sebago Lake,RW,4,Herb,NA,ARANUD,1,5,N,,N
+8/19/24,3,Sebago Lake,RW,4,Herb,NA,MEDVIR,2,4,N,,N
+8/19/24,3,Sebago Lake,RW,4,Herb,NA,GAUPRO,4,5,N,,N
+8/19/24,3,Sebago Lake,RW,4,Herb,NA,LYSBOR,1,2,N,,N
+8/23/24,1,Colby Hume,RW,1,Herb,NA,ARITRI,1,2,N,,N
+8/23/24,1,Colby Hume,RW,2,Herb,NA,ARITRI,5,10,N,,N
+8/23/24,1,Colby Hume,RW,2,Herb,NA,OSMCIN,2,20,N,,N
+8/23/24,1,Colby Hume,RW,2,Herb,NA,OSMCLA,1,3,N,,N
+8/23/24,1,Colby Hume,RW,3,Graminoid,NA,Carex sp.,1,3,N,,N
+8/23/24,1,Colby Hume,RW,3,Herb,NA,ATHFIL,3,15,N,,N
+8/23/24,1,Colby Hume,RW,3,Seedling,NA,FRAAME,1,2,N,,N
+8/23/24,1,Colby Hume,RW,3,Seedling,NA,ACERUB,1,1,N,,N
+8/23/24,1,Colby Hume,RW,4,Herb,NA,OSMCIN,14,35,N,,N
+8/23/24,1,Colby Hume,RW,4,Seedling,Hardwood,ACEPEN,1,15,N,,N
+8/23/24,1,Colby Hume,RW,4,Herb,NA,EPIHEL,1,1,Y,,N
+8/26/24,3,Colby Arboretum,RW,1,Shrub,NA,VIBOPU,16,20,N,,N
+8/26/24,3,Colby Arboretum,RW,1,Seedling,NA,FRAAME,8,15,N,,N
+8/26/24,3,Colby Arboretum,RW,1,Herb,NA,DOEUMB,1,3,N,,N
+8/26/24,3,Colby Arboretum,RW,1,Seedling,Hardwood,Malus sp.,1,5,Y,,N
+8/26/24,3,Colby Arboretum,RW,1,Seedling,NA,PINSTR,1,1,N,,N
+8/26/24,3,Colby Arboretum,RW,2,Shrub,NA,VIBOPU,2,5,N,,N
+8/26/24,3,Colby Arboretum,RW,2,Seedling,NA,PRUSER,5,3,N,,N
+8/26/24,3,Colby Arboretum,RW,2,Herb,NA,VEROFF,7,5,Y,,N
+8/26/24,3,Colby Arboretum,RW,3,Seedling,NA,FRAAME,3,15,N,,N
+8/26/24,3,Colby Arboretum,RW,3,Shrub,NA,VIBOPU,13,25,N,,N
+8/26/24,3,Colby Arboretum,RW,3,Seedling,NA,PINSTR,3,2,N,,N
+8/26/24,3,Colby Arboretum,RW,3,Herb,NA,VEROFF,2,5,Y,,N
+8/26/24,3,Colby Arboretum,RW,3,Herb,NA,EPIHEL,1,3,Y,,N
+8/26/24,3,Colby Arboretum,RW,4,Shrub,NA,VIBOPU,7,15,N,,N
+8/26/24,3,Colby Arboretum,RW,4,Seedling,NA,FRAAME,4,10,N,,N
+8/26/24,3,Colby Arboretum,RW,4,Herb,NA,RANACR,1,4,Y,,N
+8/26/24,3,Colby Arboretum,RW,4,Seedling,NA,PINSTR,2,2,N,,N
+8/26/24,3,Colby Arboretum,RW,4,Seedling,NA,Malus sp.,3,5,Y,,N
+8/27/24,1,Falmouth Land Trust,RW,1,Seedling,NA,RHACAT,8,8,Y,,N
+8/27/24,1,Falmouth Land Trust,RW,1,Graminoid,NA,Poaceae sp.,4,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,1,Woody Vine,NA,CELORB,9,8,N,,N
+8/27/24,1,Falmouth Land Trust,RW,1,Herb,NA,AMPBRA,1,2,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Seedling,NA,RHACAT,6,8,Y,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Herb,NA,ATHFIL,11,30,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Herb,NA,ARITRI,2,4,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Herb,NA,AMPBRA,1,2,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Graminoid,NA,Poaceae sp.,NA,10,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Herb,NA,Viola sp.,13,8,N,,N
+8/27/24,1,Falmouth Land Trust,RW,2,Graminoid,NA,Carex sp.,1,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Seedling,Hardwood,FRAAME,1,10,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Seedling,NA,FRAAME,4,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Herb,NA,ATHFIL,9,25,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Seedling,NA,RHACAT,1,2,Y,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Herb,NA,DOEUMB,1,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Herb,NA,ONSE,4,10,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Herb,NA,AMPBRA,1,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,3,Herb,NA,ARITRI,3,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Seedling,NA,RHACAT,6,5,Y,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Herb,NA,AMPBRA,2,5,N,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Graminoid,NA,Carex sp.,8,10,N,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Herb,NA,DOEUMB,2,3,N,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Herb,NA,ATHFIL,3,8,N,,N
+8/27/24,1,Falmouth Land Trust,RW,4,Seedling,NA,FRAAME,1,1,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Seedling,Softwood,PINSTR,1,5,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Seedling,NA,PINSTR,4,8,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Herb,NA,MITREP,14,10,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Seedling,NA,ACERUB,4,3,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Herb,NA,COPTRI,1,1,N,,N
+8/27/24,2,Falmouth Land Trust,RW,1,Herb,NA,MAICAN,1,1,N,,N
+8/27/24,2,Falmouth Land Trust,RW,2,Seedling,NA,PINSTR,3,8,N,,N
+8/27/24,2,Falmouth Land Trust,RW,2,Herb,NA,MITREP,25,10,N,,N
+8/27/24,2,Falmouth Land Trust,RW,2,Seedling,NA,QUERUB,1,2,N,,N
+8/27/24,2,Falmouth Land Trust,RW,2,Seedling,NA,ACERUB,4,3,N,,N
+8/27/24,2,Falmouth Land Trust,RW,2,Shrub,NA,Crataegus sp.,1,10,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Herb,NA,MITREP,22,8,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Herb,NA,COPTRI,3,2,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Herb,NA,UVUSES,2,4,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Herb,NA,MEDVIR,1,5,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Seedling,NA,QUERUB,1,5,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Seedling,NA,ACERUB,2,2,N,,N
+8/27/24,2,Falmouth Land Trust,RW,3,Herb,NA,MAICAN,1,1,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Herb,NA,MITREP,23,8,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Herb,NA,ARANUD,1,5,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Herb,NA,OSMCIN,4,20,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Herb,NA,MAICAN,2,3,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Seedling,NA,PINSTR,3,4,N,,N
+8/27/24,2,Falmouth Land Trust,RW,4,Seedling,NA,ACERUB,5,3,N,,N
+8/27/24,3,Falmouth Land Trust,RW,1,Seedling,NA,RHACAT,1,3,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,1,Seedling,NA,FRAAME,4,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,1,Herb,NA,MAICAN,4,8,N,,N
+8/27/24,3,Falmouth Land Trust,RW,1,Woody Vine,NA,CELORB,10,15,N,,N
+8/27/24,3,Falmouth Land Trust,RW,1,Shrub,NA,LONMOR,1,10,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Herb,NA,CIRCAN,6,15,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Seedling,NA,FRAAME,6,10,N,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Herb,NA,LYSBOR,2,4,N,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Seedling,NA,RHACAT,5,8,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Herb,NA,THAPUB,1,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Woody Vine,NA,CELORB,7,10,N,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Shrub,NA,ROSMUL,1,5,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,2,Seedling,NA,ACESAC,3,3,N,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Woody Vine,NA,CELORB,4,10,N,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Shrub,NA,ROSMUL,2,3,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Herb,NA,MAICAN,4,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Herb,NA,CIRCAN,13,10,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Seedling,NA,RHACAT,3,8,Y,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Graminoid,NA,Carex sp.,2,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Graminoid,NA,Poaceae sp.,NA,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,3,Seedling,NA,FRAAME,6,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,4,Herb,NA,MAICAN,4,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,4,Shrub,NA,VIBDEN,1,5,N,,N
+8/27/24,3,Falmouth Land Trust,RW,4,Seedling,NA,ACESAC,7,3,N,,N
+8/27/24,3,Falmouth Land Trust,RW,4,Seedling,NA,FRAAME,2,3,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Herb,NA,MAIRAC,2,10,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Shrub,NA,VIBACE,4,10,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,Hardwood,FRAAME,3,40,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,NA,FRAAME,2,15,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,NA,QUERUB,4,20,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,NA,PINSTR,3,4,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,NA,ACEPLA,3,25,Y,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Seedling,NA,PRUSER,2,5,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Herb,NA,TOXRAD,2,5,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,1,Shrub,NA,VIBDEN,1,4,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Seedling,NA,ABIBAL,4,25,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Herb,NA,OSTVIR,1,10,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Shrub,NA,Amelanchier sp.,2,8,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Herb,NA,SPIALB,2,4,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Shrub,NA,VIBACE,2,4,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,2,Seedling,NA,QUERUB,3,8,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Shrub,NA,Amelanchier sp.,3,15,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Seedling,Hardwood,FRAAME,3,30,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Herb,NA,MAIRAC,1,3,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Herb,NA,MAICAN,2,3,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Seedling,NA,ACERUB,2,2,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,3,Seedling,Hardwood,PRUSER,1,30,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,4,Herb,NA,MAICAN,5,5,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,4,Seedling,NA,PINSTR,2,2,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,4,Seedling,NA,QUERUB,1,3,N,,N
+9/2/24,4,Colby Arboretum,RW + AS,4,Shrub,NA,VIBACE,3,10,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,1,Seedling,NA,FRAAME,23,10,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,1,Seedling,Hardwood,FRAAME,1,15,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,1,Seedling,NA,PINSTR,3,2,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,2,Seedling,NA,FRAAME,8,5,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,2,Seedling,Hardwood,FRAAME,1,5,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,2,Seedling,NA,PINSTR,1,1,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,3,Seedling,NA,QUERUB,2,5,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,3,Seedling,NA,FRAAME,19,5,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,4,Seedling,NA,FRAAME,11,10,N,,N
+9/2/24,5,Colby Arboretum,RW + AS,4,Herb,NA,ARITRI,1,2,N,,N
+9/2/24,6,Colby Arboretum,RW + AS,1,NA,NA,NA,NA,NA,NA,,N
+9/2/24,6,Colby Arboretum,RW + AS,2,Herb,NA,MAICAN,1,2,N,,N
+9/2/24,6,Colby Arboretum,RW + AS,3,Seedling,Hardwood,FAGGRA,1,15,N,,N
+9/2/24,6,Colby Arboretum,RW + AS,4,NA,NA,NA,NA,NA,NA,,N
+9/2/24,7,Colby Arboretum,RW,1,Herb,NA,MAICAN,19,10,N,,N
+9/2/24,7,Colby Arboretum,RW,1,Herb,NA,GAUPRO,3,3,N,,N
+9/2/24,7,Colby Arboretum,RW,1,Seedling,NA,ACERUB,2,1,N,,N
+9/2/24,7,Colby Arboretum,RW,2,Seedling,NA,ACERUB,2,10,N,,N
+9/2/24,7,Colby Arboretum,RW,2,Herb,NA,MAICAN,29,15,N,,N
+9/2/24,7,Colby Arboretum,RW,2,Shrub,NA,VIBACE,1,3,N,,N
+9/2/24,7,Colby Arboretum,RW,2,Seedling,NA,PRUSER,1,2,N,,N
+9/2/24,7,Colby Arboretum,RW,3,Seedling,NA,Betula sp.,2,10,N,,N
+9/2/24,7,Colby Arboretum,RW,3,Herb,NA,GAUPRO,14,8,N,,N
+9/2/24,7,Colby Arboretum,RW,3,Herb,NA,MAICAN,9,8,N,,N
+9/2/24,7,Colby Arboretum,RW,3,Seedling,NA,PINSTR,1,1,N,,N
+9/2/24,7,Colby Arboretum,RW,4,Herb,NA,MAICAN,9,8,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,1,Herb,NA,DRYINT,68,70,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,1,Seedling,NA,ACERUB,1,1,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,2,Herb,NA,DRYINT,31,30,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,2,Seedling,NA,PINSTR,1,1,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,3,Herb,NA,DRYINT,14,45,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,3,Seedling,NA,PINSTR,4,3,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,3,Seedling,NA,ACERUB,3,3,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,4,Herb,NA,DRYINT,52,55,N,,N
+8/17/24,1,Androscoggin Riverlands,RW,4,Seedling,NA,ACERUB,2,1,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,1,Herb,NA,MAICAN,102,10,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,1,Herb,NA,DRYINT,3,10,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,1,Herb,NA,LYSBOR,3,8,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,1,Seedling,NA,ABIBAL,3,3,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,1,Seedling,NA,ACERUB,6,2,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,2,Herb,NA,MAICAN,61,10,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,2,Seedling,NA,ACERUB,5,3,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,2,Herb,NA,DENOBS,2,2,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,3,Herb,NA,MAICAN,20,8,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,3,Seedling,NA,ACERUB,5,2,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,3,Herb,NA,LYSBOR,1,3,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,3,Seedling,NA,ABIBAL,1,1,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,3,Herb,NA,PTEAQU,2,25,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Herb,NA,MAICAN,66,10,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Herb,NA,PTEAQU,2,25,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Herb,NA,LYSBOR,5,6,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Seedling,NA,ABIBAL,1,1,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Seedling,NA,ACERUB,4,3,N,,N
+8/17/24,2,Androscoggin Riverlands,RW,4,Herb,NA,POLPAU,4,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,1,Herb,NA,MAICAN,40,10,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,1,Seedling,NA,ACERUB,5,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,1,Shrub,NA,VACANG,2,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,1,Seedling,NA,PINSTR,27,5,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,2,Seedling,Softwood,ABIBAL,1,15,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,2,Herb,NA,MAICAN,11,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,2,Seedling,NA,PINSTR,16,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,2,Seedling,NA,ACERUB,4,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,3,Seedling,NA,ACERUB,5,2,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,3,Herb,NA,MAICAN,18,5,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,3,Seedling,NA,PINSTR,23,5,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Seedling,NA,ABIBAL,2,20,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Seedling,NA,QUERUB,2,10,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Seedling,NA,ACERUB,8,4,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Herb,NA,MAICAN,4,3,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Herb,NA,LYSBOR,1,2,N,,N
+8/17/24,3,Androscoggin Riverlands,RW,4,Seedling,NA,PINSTR,29,8,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,1,Herb,NA,ATHFIL,12,25,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,1,Seedling,NA,FAGGRA,6,25,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,1,Seedling,NA,FRAAME,2,2,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,2,Herb,NA,ATHFIL,4,15,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,2,Seedling,NA,FRAAME,1,1,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,2,Seedling,NA,ACERUB,1,1,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,2,Seedling,NA,OSTVIR,1,2,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,3,Herb,NA,ATHFIL,10,25,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,3,Seedling,NA,FRAAME,1,1,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,4,Seedling,NA,PINSTR,2,1,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,4,Herb,NA,MAICAN,8,8,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,4,Seedling,NA,FRAAME,3,3,N,,N
+8/17/24,4,Androscoggin Riverlands,RW,4,Herb,NA,ATHFIL,5,10,N,,N
+10/26/24,1,Scopan Lake,RW,1,Seedling,Hardwood,BETALL,1,1,N,,Y
+10/26/24,1,Scopan Lake,RW,1,Seedling,NA,FAGGRA,1,5,N,,Y
+10/26/24,1,Scopan Lake,RW,1,Seedling,NA,ACERUB,1,5,N,,Y
+10/26/24,1,Scopan Lake,RW,1,Shrub,NA,VIBLAN,1,5,N,,Y
+10/26/24,1,Scopan Lake,RW,2,Seedling,NA,ACEPEN,6,NA,N,,Y
+10/26/24,1,Scopan Lake,RW,2,Seedling,NA,ACERUB,1,NA,N,,Y
+10/26/24,1,Scopan Lake,RW,3,Seedling,NA,ABIBAL,2,50,N,,Y
+10/26/24,1,Scopan Lake,RW,3,Seedling,NA,ACEPEN,1,3,N,,Y
+10/26/24,1,Scopan Lake,RW,4,Shrub,NA,VIBLAN,2,15,N,,Y
+10/26/24,1,Scopan Lake,RW,4,Seedling,NA,ACERUB,2,8,N,,Y
+10/26/24,2,Scopan Lake,RW,1,Seedling,Hardwood,ACERUB,5,NA 20 w leave and 2 w/o,N,,Y
+10/26/24,2,Scopan Lake,RW,1,Herb,NA,DRYINT,1,10,N,,Y
+10/26/24,2,Scopan Lake,RW,2,Herb,NA,DRYINT,4,25,N,,Y
+10/26/24,2,Scopan Lake,RW,3,Seedling,NA,ACERUB,6,NA40 w leave and 10 w/o,N,,Y
+10/26/24,2,Scopan Lake,RW,3,Herb,NA,DRYINT,15,NA 30,N,,Y
+10/26/24,2,Scopan Lake,RW,3,Seedling,NA,ABIBAL,2,8,N,,Y
+10/26/24,2,Scopan Lake,RW,4,Herb,NA,DRYINT,21,60,N,,Y
+10/26/24,2,Scopan Lake,RW,4,Seedling,NA,PICRUB,1,5,N,,Y
+11/22/24,1,Coastal Botanical Gardens,RW,1,NA,NA,NA,NA,NA,NA,,Y
+11/22/24,1,Coastal Botanical Gardens,RW,2,Seedling,Softwood,ABIBAL,1,1,N,,Y
+11/22/24,1,Coastal Botanical Gardens,RW,3,Seedling,Softwood,PINSTR,1,3,N,,Y
+11/22/24,1,Coastal Botanical Gardens,RW,3,Graminoid,NA,Poaceae sp.,3,2,N,,Y
+11/22/24,1,Coastal Botanical Gardens,RW,4,NA,NA,NA,NA,NA,NA,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,1,Herb,NA,GAUPRO,14,10,N,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,1,Seedling,Softwood,PINSTR,1,5,N,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,2,Shrub,NA,RUBALL,1,3,N,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,3,Herb,NA,GAUPRO,1,1,N,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,4,Herb,NA,GAUPRO,4,3,N,,Y
+11/22/24,2,Coastal Botanical Gardens,RW + AS,4,Seedling,NA,PINSTR,1,0.5,N,,Y
+11/22/24,3,Coastal Botanical Gardens,RW + AS,1,Herb,NA,TAROFF,1,5,Y,,Y
+11/22/24,3,Coastal Botanical Gardens,RW + AS,2,NA,NA,NA,NA,NA,NA,,Y
+11/22/24,3,Coastal Botanical Gardens,RW + AS,3,Seedling,Softwood,ABIBAL,1,8,N,,Y
+11/22/24,3,Coastal Botanical Gardens,RW + AS,4,Herb,NA,DRYINT,3,15,N,,Y
+9/3/24,1,Viles Arboretum,RW,1,Herb,NA,IMPCAP,12,35,N,,N
+9/3/24,1,Viles Arboretum,RW,1,Herb,NA,RANREP,6,10,Y,,N
+9/3/24,1,Viles Arboretum,RW,1,Herb,NA,EPICIL,3,5,N,,N
+9/3/24,1,Viles Arboretum,RW,1,Herb,NA,GEUCAN,1,2,N,,N
+9/3/24,1,Viles Arboretum,RW,2,Herb,NA,IMPCAP,4,20,N,,N
+9/3/24,1,Viles Arboretum,RW,2,Herb,NA,RANREP,4,5,Y,,N
+9/3/24,1,Viles Arboretum,RW,2,Herb,NA,EPICIL,5,8,N,,N
+9/3/24,1,Viles Arboretum,RW,2,Herb,NA,Galium sp.,7,3,N,,N
+9/3/24,1,Viles Arboretum,RW,3,Herb,NA,IMPCAP,3,10,N,,N
+9/3/24,1,Viles Arboretum,RW,3,Graminoid,NA,Poaceae sp.,"NA, 100",20,N,,N
+9/3/24,1,Viles Arboretum,RW,3,Herb,NA,EPICIL,1,3,N,,N
+9/3/24,1,Viles Arboretum,RW,4,Herb,NA,RANREP,1,2,Y,,N
+9/3/24,1,Viles Arboretum,RW,4,Herb,NA,IMPCAP,6,15,N,,N
+9/3/24,1,Viles Arboretum,RW,4,Herb,NA,EPICIL,3,5,N,,N
+9/3/24,1,Viles Arboretum,RW,4,Seedling,NA,FRAAME,1,2,N,,N
+9/3/24,2,Viles Arboretum,RW,1,Shrub,NA,EUOALA,1,10,Y,,N
+9/3/24,2,Viles Arboretum,RW,1,Herb,NA,MAICAN,13,8,N,,N
+9/3/24,2,Viles Arboretum,RW,1,Shrub,NA,VIBDEN,1,2,N,,N
+9/3/24,2,Viles Arboretum,RW,1,Seedling,NA,ACESAC,5,10,N,,N
+9/3/24,2,Viles Arboretum,RW,1,Woody Vine,NA,CELORB,2,8,Y,,N
+9/3/24,2,Viles Arboretum,RW,2,Shrub,NA,EUOALA,2,5,Y,,N
+9/3/24,2,Viles Arboretum,RW,2,Herb,NA,MAICAN,4,3,N,,N
+9/3/24,2,Viles Arboretum,RW,2,Seedling,NA,Acer sp.,8,8,N,,N
+9/3/24,2,Viles Arboretum,RW,3,Shrub,NA,EUOALA,5,10,Y,,N
+9/3/24,2,Viles Arboretum,RW,3,Herb,NA,MAICAN,12,8,N,,N
+9/3/24,2,Viles Arboretum,RW,3,Seedling,NA,Acer sp.,4,5,N,,N
+9/3/24,2,Viles Arboretum,RW,3,Seedling,NA,ACESAC,2,2,N,,N
+9/3/24,2,Viles Arboretum,RW,4,Shrub,NA,EUOALA,3,10,Y,,N
+9/3/24,2,Viles Arboretum,RW,4,Seedling,NA,OSTVIR,1,3,N,,N
+9/3/24,2,Viles Arboretum,RW,4,Woody Vine,NA,CELORB,1,2,Y,,N
+9/3/24,2,Viles Arboretum,RW,4,Seedling,NA,Acer sp.,1,2,N,,N
+9/3/24,2,Viles Arboretum,RW,4,Herb,NA,MAICAN,4,3,N,,N
+9/3/24,3,Viles Arboretum,RW,1,Herb,NA,OSMCIN,7,25,N,,N
+9/3/24,3,Viles Arboretum,RW,2,NA,NA,NA,NA,NA,NA,,N
+9/3/24,3,Viles Arboretum,RW,3,NA,NA,NA,NA,NA,NA,,N
+9/3/24,3,Viles Arboretum,RW,4,NA,NA,NA,NA,NA,NA,,N
+8/11/24,2,Little Moose,RW,1,Herb,NA,DRYINT,13,15,N,,N
+8/11/24,2,Little Moose,RW,1,Seedling,NA,ACEPEN,3,10,N,,N
+8/11/24,2,Little Moose,RW,1,Shrub,NA,VIBLAN,7,20,N,,N
+8/11/24,2,Little Moose,RW,2,Seedling,NA,ACEPEN,3,10,N,,N
+8/11/24,2,Little Moose,RW,2,Herb,NA,DRYINT,18,25,N,,N
+8/11/24,2,Little Moose,RW,2,Shrub,NA,VIBLAN,1,3,N,,N
+8/11/24,2,Little Moose,RW,2,Herb,NA,HUPLUC,25,10,N,,N
+8/11/24,2,Little Moose,RW,3,Herb,NA,DRYINT,5,10,N,,N
+8/11/24,2,Little Moose,RW,3,Herb,NA,HUPLUC,4,3,N,,N
+8/11/24,2,Little Moose,RW,3,Seedling,NA,ACEPEN,1,2,N,,N
+8/11/24,2,Little Moose,RW,4,Shrub,NA,VIBLAN,10,35,N,,N
+8/11/24,2,Little Moose,RW,4,Seedling,Hardwood,ACEPEN,2,10,N,,N
+8/11/24,3,Little Moose,RW,1,Herb,NA,LYSBOR,4,8,N,,N
+8/11/24,3,Little Moose,RW,1,Herb,NA,OSMCIN,7,10,N,,N
+8/11/24,3,Little Moose,RW,1,Seedling,NA,BETPAP,3,3,N,,N
+8/11/24,3,Little Moose,RW,1,Herb,NA,PHECON,1,4,N,,N
+8/11/24,3,Little Moose,RW,1,Herb,NA,TRIERE,8,10,N,,N
+8/11/24,3,Little Moose,RW,1,Herb,NA,MAICAN,2,2,N,,N
+8/11/24,3,Little Moose,RW,2,Herb,NA,TRIERE,20,15,N,,N
+8/11/24,3,Little Moose,RW,2,Graminoid,NA,Carex sp.,1,2,N,,N
+8/11/24,3,Little Moose,RW,2,Seedling,NA,BETPAP,3,2,N,,N
+8/11/24,3,Little Moose,RW,3,Herb,NA,TRIERE,12,5,N,,N
+8/11/24,3,Little Moose,RW,3,Herb,NA,ARANUD,5,25,N,,N
+8/11/24,3,Little Moose,RW,3,Seedling,NA,FRAAME,1,10,N,,N
+8/11/24,3,Little Moose,RW,3,Seedling,Hardwood,FRAAME,1,8,N,,N
+8/11/24,3,Little Moose,RW,4,Herb,NA,TRIERE,3,5,N,,N
+8/11/24,3,Little Moose,RW,4,Herb,NA,MAICAN,2,2,N,,N
+8/11/24,3,Little Moose,RW,4,Seedling,NA,BETPAP,1,1,N,,N
+8/11/24,4,Little Moose,RW,1,NA,NA,NA,NA,NA,N,,N
+8/11/24,4,Little Moose,RW,2,NA,NA,NA,NA,NA,N,,N
+8/11/24,4,Little Moose,RW,3,NA,NA,NA,NA,NA,N,,N
+8/11/24,4,Little Moose,RW,4,NA,NA,NA,NA,NA,N,,N
+8/12/24,1,Mahoosuc,RW,1,Seedling,NA,ACESAC,41,15,N,,N
+8/12/24,1,Mahoosuc,RW,2,Seedling,NA,ACESAC,49,20,N,,N
+8/12/24,1,Mahoosuc,RW,2,Shrub,NA,CORCOR,1,5,N,,N
+8/12/24,1,Mahoosuc,RW,3,Seedling,NA,ACESAC,38,10,N,,N
+8/12/24,1,Mahoosuc,RW,3,Seedling,NA,BETPOP,1,1,N,,N
+8/12/24,1,Mahoosuc,RW,4,Seedling,NA,ACESAC,40,20,N,,N
+8/12/24,2,Mahoosuc,RW,1,Herb,NA,ONSE,21,20,N,,N
+8/12/24,2,Mahoosuc,RW,1,Seedling,Hardwood,FRAAME,2,10,N,,N
+8/12/24,2,Mahoosuc,RW,1,Seedling,NA,FRAAME,1,5,N,,N
+8/12/24,2,Mahoosuc,RW,1,Shrub,NA,RUBPUB,16,25,N,,N
+8/12/24,2,Mahoosuc,RW,1,Seedling,NA,ACESAC,3,5,N,,N
+8/12/24,2,Mahoosuc,RW,1,Herb,NA,THAPUB,2,3,N,,N
+8/12/24,2,Mahoosuc,RW,1,Herb,NA,SYMPUN,5,8,N,,N
+8/12/24,2,Mahoosuc,RW,2,Graminoid,NA,Poaceae sp.,4,5,N,,N
+8/12/24,2,Mahoosuc,RW,2,Seedling,Hardwood,FRAAME,2,5,N,,N
+8/12/24,2,Mahoosuc,RW,2,Herb,NA,SYMPUN,2,3,N,,N
+8/12/24,2,Mahoosuc,RW,2,Seedling,Hardwood,PRUSER,1,2,N,,N
+8/12/24,2,Mahoosuc,RW,2,Shrub,NA,RUBPUB,26,25,N,,N
+8/12/24,2,Mahoosuc,RW,2,Herb,NA,ONSE,4,5,N,,N
+8/12/24,2,Mahoosuc,RW,2,Seedling,NA,ACERUB,1,3,N,,N
+8/12/24,2,Mahoosuc,RW,2,Seedling,Hardwood,ACESAC,3,20,N,,N
+8/12/24,2,Mahoosuc,RW,2,Herb,NA,CIRALP,6,7,N,,N
+8/12/24,2,Mahoosuc,RW,2,Herb,NA,ARITRI,2,2,N,,N
+8/12/24,2,Mahoosuc,RW,2,Graminoid,NA,Poaceae sp.,6,3,N,,N
+8/12/24,2,Mahoosuc,RW,3,Graminoid,NA,Poaceae sp.,6,3,N,,N
+8/12/24,2,Mahoosuc,RW,3,Shrub,NA,RUBPUB,6,3,N,,N
+8/12/24,2,Mahoosuc,RW,3,Shrub,NA,RIBGLA,17,15,N,,N
+8/12/24,2,Mahoosuc,RW,3,Seedling,Hardwood,ACESAC,2,3,N,,N
+8/12/24,2,Mahoosuc,RW,3,Herb,NA,MAICAN,2,10,N,,N
+8/12/24,2,Mahoosuc,RW,3,Herb,NA,ONSE,1,1,N,,N
+8/12/24,2,Mahoosuc,RW,3,Herb,NA,SYMPUN,9,10,N,,N
+8/12/24,2,Mahoosuc,RW,4,Herb,NA,ONSE,8,10,N,,N
+8/12/24,2,Mahoosuc,RW,4,Shrub,NA,RUBPUB,12,10,N,,N
+8/12/24,2,Mahoosuc,RW,4,Seedling,NA,ACEPEN,2,10,N,,N
+8/12/24,2,Mahoosuc,RW,4,Seedling,NA,ACESAC,1,5,N,,N
+8/12/24,2,Mahoosuc,RW,4,Graminoid,NA,Poaceae sp.,4,5,N,,N
+8/12/24,2,Mahoosuc,RW,4,Graminoid,NA,Poaceae sp.,2,3,N,,N
+8/12/24,2,Mahoosuc,RW,4,Herb,NA,THAPUB,1,1,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,DRYCAR,9,10,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,CORCAN,57,45,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,ARANUD,1,3,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,MAICAN,13,5,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,COPTRI,146,40,N,,N
+8/12/24,3,Mahoosuc,RW,1,Shrub,NA,VIBNUD,1,2,N,,N
+8/12/24,3,Mahoosuc,RW,1,Seedling,NA,SORAME,12,7,N,,N
+8/12/24,3,Mahoosuc,RW,1,Seedling,NA,ACERUB,1,1,N,,N
+8/12/24,3,Mahoosuc,RW,1,Seedling,NA,ABIBAL,3,3,N,,N
+8/12/24,3,Mahoosuc,RW,1,Herb,NA,OXAMON,10,5,N,,N
+8/12/24,3,Mahoosuc,RW,1,Seedling,Hardwood,ACERUB,1,4,N,,N
+8/12/24,3,Mahoosuc,RW,1,Seedling,NA,ABIBAL,1,4,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,DRYCAR,9,15,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,COPTRI,57,10,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,CORCAN,18,15,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,ARANUD,1,3,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,MAICAN,15,7,N,,N
+8/12/24,3,Mahoosuc,RW,2,Seedling,NA,SORAME,3,2,N,,N
+8/12/24,3,Mahoosuc,RW,2,Seedling,NA,ABIBAL,1,1,N,,N
+8/12/24,3,Mahoosuc,RW,2,Herb,NA,OXAMON,6,2,N,,N
+8/12/24,3,Mahoosuc,RW,2,Shrub,NA,AMEARB,1,2,N,,N
+8/12/24,3,Mahoosuc,RW,2,Seedling,NA,FAGGRA,1,3,N,,N
+8/12/24,3,Mahoosuc,RW,3,Herb,NA,DRYCAR,8,25,N,,N
+8/12/24,3,Mahoosuc,RW,3,Herb,NA,CORCAN,8,10,N,,N
+8/12/24,3,Mahoosuc,RW,3,Seedling,NA,SORAME,2,4,N,,N
+8/12/24,3,Mahoosuc,RW,3,Herb,NA,COPTRI,71,25,N,,N
+8/12/24,3,Mahoosuc,RW,3,Herb,NA,MAICAN,10,10,N,,N
+8/12/24,3,Mahoosuc,RW,3,Shrub,NA,VACMYR,4,30,N,,N
+8/12/24,3,Mahoosuc,RW,4,Herb,NA,DRYCAR,18,35,N,,N
+8/12/24,3,Mahoosuc,RW,4,Herb,NA,CORCAN,49,25,N,,N
+8/12/24,3,Mahoosuc,RW,4,Seedling,NA,SORAME,9,5,N,,N
+8/12/24,3,Mahoosuc,RW,4,Herb,NA,ARANUD,3,30,N,,N
+8/12/24,3,Mahoosuc,RW,4,Herb,NA,COPTRI,65,20,N,,N
+8/12/24,3,Mahoosuc,RW,4,Shrub,NA,VIBLAN,1,4,N,,N
+8/12/24,3,Mahoosuc,RW,4,Herb,NA,MAICAN,5,5,N,,N
+8/12/24,3,Mahoosuc,RW,4,Seedling,NA,ABIBAL,2,2,N,,N
+8/12/24,4,Mahoosuc,RW,1,Shrub,NA,VIBLAN,2,10,N,,N
+8/12/24,4,Mahoosuc,RW,1,Seedling,NA,ACERUB,14,3,N,,N
+8/12/24,4,Mahoosuc,RW,1,Herb,NA,LYSBOR,1,2,N,,N
+8/12/24,4,Mahoosuc,RW,2,Herb,NA,LYSBOR,2,5,N,,N
+8/12/24,4,Mahoosuc,RW,2,Seedling,NA,ACERUB,21,5,N,,N
+8/12/24,4,Mahoosuc,RW,3,Herb,NA,LYSBOR,28,15,N,,N
+8/12/24,4,Mahoosuc,RW,3,Herb,NA,STRLAN,1,5,N,,N
+8/12/24,4,Mahoosuc,RW,3,Seedling,NA,ACERUB,7,3,N,,N
+8/12/24,4,Mahoosuc,RW,3,Herb,NA,MAICAN,1,1,N,,N
+8/12/24,4,Mahoosuc,RW,4,Herb,NA,LYSBOR,5,10,N,,N
+8/12/24,4,Mahoosuc,RW,4,Seedling,NA,ACERUB,16,5,N,,N
+8/12/24,4,Mahoosuc,RW,4,Herb,NA,CLIBOR,1,5,N,,N
+8/12/24,4,Mahoosuc,RW,4,Seedling,NA,BETALL,1,1,N,,N
+8/13/24,2,Bigelow,RW,1,Herb,NA,MAICAN,34,10,N,,N
+8/13/24,2,Bigelow,RW,1,Herb,NA,LYSBOR,28,10,N,,N
+8/13/24,2,Bigelow,RW,1,Seedling,Softwood,ABIBAL,3,40,N,,N
+8/13/24,2,Bigelow,RW,1,Seedling,NA,ACERUB,2,1,N,,N
+8/13/24,2,Bigelow,RW,2,Herb,NA,MAICAN,25,10,N,,N
+8/13/24,2,Bigelow,RW,2,Seedling,NA,ACESAC,1,3,N,,N
+8/13/24,2,Bigelow,RW,2,Seedling,NA,ACERUB,3,3,N,,N
+8/13/24,2,Bigelow,RW,2,Herb,NA,LYSBOR,8,8,N,,N
+8/13/24,2,Bigelow,RW,2,Seedling,NA,ABIBAL,1,1,N,,N
+8/13/24,2,Bigelow,RW,2,Seedling,NA,PICMAR,1,1,N,,N
+8/13/24,2,Bigelow,RW,3,Herb,NA,MAICAN,16,10,N,,N
+8/13/24,2,Bigelow,RW,3,Herb,NA,LYSBOR,8,7,N,,N
+8/13/24,2,Bigelow,RW,3,Seedling,Hardwood,BETALL,1,15,N,,N
+8/13/24,2,Bigelow,RW,3,Seedling,Hardwood,ACESAC,3,35,N,,N
+8/13/24,2,Bigelow,RW,3,Seedling,NA,ACESAC,3,15,N,,N
+8/13/24,2,Bigelow,RW,3,Seedling,Softwood,ABIBAL,2,10,N,,N
+8/13/24,2,Bigelow,RW,3,Seedling,NA,ACERUB,2,8,N,,N
+8/13/24,2,Bigelow,RW,4,Herb,NA,MAICAN,22,10,N,,N
+8/13/24,2,Bigelow,RW,4,Seedling,Hardwood,FRAAME,1,15,N,,N
+8/13/24,2,Bigelow,RW,4,Seedling,Softwood,ABIBAL,1,15,N,,N
+8/13/24,2,Bigelow,RW,4,Seedling,NA,ABIBAL,1,3,N,,N
+8/13/24,2,Bigelow,RW,4,Herb,NA,LYSBOR,5,6,N,,N
+8/13/24,3,Bigelow,RW,1,Seedling,NA,ACERUB,11,4,N,,N
+8/13/24,3,Bigelow,RW,2,Seedling,NA,ACERUB,5,2,N,,N
+8/13/24,3,Bigelow,RW,3,Seedling,NA,ACERUB,6,3,N,,N
+8/13/24,3,Bigelow,RW,4,Herb,NA,DRYCAR,5,15,N,,N
+8/13/24,3,Bigelow,RW,4,Seedling,NA,ACERUB,5,2,N,,N
+8/13/24,4,Bigelow,RW,1,Seedling,NA,ABIBAL,3,10,N,,N
+8/13/24,4,Bigelow,RW,1,Seedling,NA,ACERUB,2,1,N,,N
+8/13/24,4,Bigelow,RW,2,Seedling,NA,ABIBAL,1,3,N,,N
+8/13/24,4,Bigelow,RW,3,Seedling,NA,ABIBAL,1,10,N,,N
+8/13/24,4,Bigelow,RW,4,Seedling,NA,ABIBAL,5,25,N,,N
+8/16/24,1,Kennebec Highlands,RW,1,Seedling,NA,ACERUB,1,2,N,,N
+8/16/24,1,Kennebec Highlands,RW,2,NA,NA,NA,NA,NA,NA,,N
+8/16/24,1,Kennebec Highlands,RW,3,NA,NA,NA,NA,NA,NA,,N
+8/16/24,1,Kennebec Highlands,RW,4,Herb,NA,POLACR,8,15,N,,N
+8/16/24,2,Kennebec Highlands,RW,1,Seedling,Softwood,ABIBAL,1,25,N,,N
+8/16/24,2,Kennebec Highlands,RW,1,Seedling,NA,FRAAME,2,3,N,,N
+8/16/24,2,Kennebec Highlands,RW,2,Seedling,Hardwood,ACESAC,1,25,N,,N
+8/16/24,2,Kennebec Highlands,RW,2,Graminoid,NA,Poaceae sp.,2,2,N,,N
+8/16/24,2,Kennebec Highlands,RW,3,Seedling,NA,ACERUB,2,3,N,,N
+8/16/24,2,Kennebec Highlands,RW,3,Herb,NA,MITREP,2,2,N,,N
+8/16/24,2,Kennebec Highlands,RW,4,Seedling,NA,PTEAQU,1,10,N,,N
+8/16/24,2,Kennebec Highlands,RW,4,Seedling,NA,FRAAME,1,3,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Shrub,NA,VACANG,29,20,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Herb,NA,MAICAN,16,5,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Seedling,NA,PINSTR,33,5,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Herb,NA,LYSBOR,1,2,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Seedling,NA,ACERUB,1,2,N,,N
+8/16/24,3,Kennebec Highlands,RW,1,Herb,NA,PTEAQU,1,10,N,,N
+8/16/24,3,Kennebec Highlands,RW,2,Herb,NA,PTEAQU,2,20,N,,N
+8/16/24,3,Kennebec Highlands,RW,2,Seedling,NA,ACERUB,3,5,N,,N
+8/16/24,3,Kennebec Highlands,RW,2,Shrub,NA,VACANG,28,25,N,,N
+8/16/24,3,Kennebec Highlands,RW,2,Herb,NA,LYSBOR,4,5,N,,N
+8/16/24,3,Kennebec Highlands,RW,2,Seedling,NA,PINSTR,81,15,N,,N
+8/16/24,3,Kennebec Highlands,RW,3,Shrub,NA,VACANG,34,25,N,,N
+8/16/24,3,Kennebec Highlands,RW,3,Seedling,NA,ACERUB,3,5,N,,N
+8/16/24,3,Kennebec Highlands,RW,3,Herb,NA,LYSBOR,3,4,N,,N
+8/16/24,3,Kennebec Highlands,RW,3,Herb,NA,MAICAN,8,4,N,,N
+8/16/24,3,Kennebec Highlands,RW,3,Seedling,NA,PINSTR,68,10,N,,N
+8/16/24,3,Kennebec Highlands,RW,4,Shrub,NA,VACANG,16,15,N,,N
+8/16/24,3,Kennebec Highlands,RW,4,Seedling,NA,PINSTR,120,12,N,,N
+8/16/24,3,Kennebec Highlands,RW,4,Herb,NA,MAICAN,11,8,N,,N
+8/16/24,3,Kennebec Highlands,RW,4,Herb,NA,LYSBOR,3,4,N,,N
+8/16/24,3,Kennebec Highlands,RW,4,Seedling,NA,ACERUB,2,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,1,Herb,NA,MAICAN,5,2,N,,N
+8/16/24,4,Kennebec Highlands,RW,1,Seedling,NA,ACERUB,5,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,1,Seedling,NA,ABIBAL,2,2,N,,N
+8/16/24,4,Kennebec Highlands,RW,2,Herb,NA,MAICAN,4,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,2,Seedling,NA,ACERUB,4,2,N,,N
+8/16/24,4,Kennebec Highlands,RW,2,Seedling,NA,ABIBAL,4,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,3,Herb,NA,MAICAN,6,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,3,Seedling,NA,ACERUB,2,2,N,,N
+8/16/24,4,Kennebec Highlands,RW,3,Seedling,NA,ABIBAL,1,5,N,,N
+8/16/24,4,Kennebec Highlands,RW,4,Seedling,NA,ACERUB,9,3,N,,N
+8/16/24,4,Kennebec Highlands,RW,4,Herb,NA,MAICAN,2,3,N,,N
+8/13/24,1,Bigelow,RW,1,Herb,NA,ARANUD,2,5,N,,N
+8/13/24,1,Bigelow,RW,1,Herb,NA,LYSBOR,3,3,N,,N
+8/13/24,1,Bigelow,RW,1,Herb,NA,CORCAN,1,2,N,,N
+8/13/24,1,Bigelow,RW,1,Seedling,NA,ACERUB,8,5,N,,N
+8/13/24,1,Bigelow,RW,1,Seedling,NA,BETPAP,1,1,N,,N
+8/13/24,1,Bigelow,RW,2,Herb,NA,MAICAN,6,5,N,,N
+8/13/24,1,Bigelow,RW,2,Seedling,NA,ACERUB,19,5,N,,N
+8/13/24,1,Bigelow,RW,2,Seedling,NA,ABIBAL,1,2,N,,N
+8/13/24,1,Bigelow,RW,2,Herb,NA,OCLACU,2,5,N,,N
+8/13/24,1,Bigelow,RW,3,Herb,NA,MAICAN,15,5,N,,N
+8/13/24,1,Bigelow,RW,3,Seedling,NA,ACERUB,19,7,N,,N
+8/13/24,1,Bigelow,RW,3,Herb,NA,PTEAQU,3,25,N,,N
+8/13/24,1,Bigelow,RW,3,Herb,NA,LYSBOR,2,5,N,,N
+8/13/24,1,Bigelow,RW,3,Shrub,NA,KALANG,7,10,N,,N
+8/13/24,1,Bigelow,RW,3,Herb,NA,ARANUD,1,8,N,,N
+8/13/24,1,Bigelow,RW,3,Herb,NA,DENOBS,1,1,N,,N
+8/13/24,1,Bigelow,RW,4,Seedling,NA,ABIBAL,1,2,N,,N
+8/13/24,1,Bigelow,RW,4,Seedling,Hardwood,POPTRE,2,4,N,,N
+8/13/24,1,Bigelow,RW,4,Herb,NA,MAICAN,5,4,N,,N
+8/13/24,1,Bigelow,RW,4,Seedling,NA,ACERUB,14,5,N,,N
+8/13/24,1,Bigelow,RW,4,Herb,NA,LYSBOR,3,5,N,,N
+8/13/24,1,Bigelow,RW,4,Herb,NA,ARANUD,3,5,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Seedling,NA,PRUSER,4,10,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Seedling,NA,PRUVIR,3,15,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Herb,NA,MAICAN,8,7,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Seedling,Hardwood,FRAAME,1,10,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Seedling,NA,FRAAME,9,15,N,,N
+8/14/24,2,Colby Arboretum,RW,1,Seedling,NA,QUERUB,1,7,N,,N
+8/14/24,2,Colby Arboretum,RW,2,Seedling,NA,PRUSER,6,15,N,,N
+8/14/24,2,Colby Arboretum,RW,2,Seedling,Hardwood,FRAAME,2,25,N,,N
+8/14/24,2,Colby Arboretum,RW,2,Seedling,NA,FRAAME,10,5,N,,N
+8/14/24,2,Colby Arboretum,RW,2,Seedling,NA,PINSTR,1,1,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Seedling,NA,PRUSER,2,6,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Herb,NA,ONSE,1,3,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Seedling,NA,PRUVIR,2,5,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Seedling,NA,PINSTR,1,1,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Herb,NA,THENOV,7,15,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Seedling,NA,FRAAME,3,10,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Woody vine,NA,CELORB,3,5,Y,,N
+8/14/24,2,Colby Arboretum,RW,3,Seedling,NA,QUERUB,1,3,N,,N
+8/14/24,2,Colby Arboretum,RW,3,Shrub,NA,VIBDEN,2,2,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Seedling,Hardwood,FRAAME,3,70,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Herb,NA,THENOV,7,15,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Seedling,NA,FRAAME,12,10,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Seedling,Hardwood,POPTRE,2,5,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Seedling,NA,QUERUB,1,2,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Herb,NA,ARITRI,1,2,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Herb,NA,MAICAN,4,3,N,,N
+8/14/24,2,Colby Arboretum,RW,4,Shrub,NA,ILEVER,3,5,N,,N
+8/15/24,1,Bradbury Mountain,RW,1,Seedling,NA,FAGGRA,1,2,N,,N
+8/15/24,1,Bradbury Mountain,RW,2,Seedling,NA,FAGGRA,1,1,N,,N
+8/15/24,1,Bradbury Mountain,RW,3,Seedling,NA,ACERUB,1,1,N,,N
+8/15/24,1,Bradbury Mountain,RW,4,Seedling,NA,ACERUB,1,1,N,,N
+8/15/24,2,Bradbury Mountain,RW,1,Seedling,NA,FAGGRA,3,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,1,Herb,NA,STRLAN,2,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,1,Seedling,NA,PINSTR,1,1,N,,N
+8/15/24,2,Bradbury Mountain,RW,1,Herb,NA,LYSBOR,1,3,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Herb,NA,STRLAN,3,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Herb,NA,DENOBS,10,10,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Seedling,NA,FAGGRA,1,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Herb,NA,LYSBOR,2,2,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Seedling,NA,PINSTR,3,10,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Seedling,NA,ACEPEN,2,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Seedling,NA,Acer sp.,4,3,N,,N
+8/15/24,2,Bradbury Mountain,RW,2,Herb,NA,GAUPRO,1,2,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Seedling,Hardwood,ACEPEN,1,10,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Seedling,NA,ACEPEN,2,10,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Seedling,NA,FAGGRA,2,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Herb,NA,LYSBOR,5,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Herb,NA,MEDVIR,1,4,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Herb,NA,STRLAN,3,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Herb,NA,DENOBS,2,3,N,,N
+8/15/24,2,Bradbury Mountain,RW,3,Herb,NA,MITREP,5,3,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Herb,NA,MITREP,9,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Seedling,NA,ACEPEN,2,10,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Herb,NA,MEDVIR,1,3,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Seedling,NA,FAGGRA,1,2,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Herb,NA,DENOBS,3,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Seedling,NA,Acer sp.,1,5,N,,N
+8/15/24,2,Bradbury Mountain,RW,4,Herb,NA,LYSBOR,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Herb,NA,LYSBOR,3,5,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Herb,NA,VACANG,3,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Herb,NA,PTEAQU,1,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Herb,NA,GAUPRO,14,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Herb,NA,MAICAN,8,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Seedling,NA,ACERUB,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,1,Seedling,NA,HAMVIR,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Herb,NA,PTEAQU,1,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Herb,NA,MAICAN,21,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Herb,NA,VACANG,4,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Herb,NA,GAUPRO,5,5,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Seedling,NA,ACERUB,4,5,N,,N
+8/15/24,3,Bradbury Mountain,RW,2,Herb,NA,LYSBOR,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Herb,NA,PTEAQU,3,20,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Herb,NA,MAICAN,20,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Seedling,NA,PINSTR,2,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Herb,NA,GAUPRO,53,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Seedling,Hardwood,HAMVIR,1,5,N,,N
+8/15/24,3,Bradbury Mountain,RW,3,Seedling,NA,ACERUB,2,3,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,MITREP,9,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,MAICAN,11,5,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,GAUPRO,39,10,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,MEDVIR,1,3,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,PTEAQU,1,8,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Seedling,NA,TSUCAN,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Herb,NA,LYSBOR,1,2,N,,N
+8/15/24,3,Bradbury Mountain,RW,4,Seedling,NA,ACERUB,3,3,N,,N
+8/15/24,4,Bradbury Mountain,RW,1,Herb,NA,OSMCLA,1,5,N,,N
+8/15/24,4,Bradbury Mountain,RW,1,Herb,NA,THENOV,28,50,N,,N
+8/15/24,4,Bradbury Mountain,RW,1,Seedling,NA,FRAAME,10,5,N,,N
+8/15/24,4,Bradbury Mountain,RW,1,Seedling,NA,PINSTR,1,1,N,,N
+8/15/24,4,Bradbury Mountain,RW,2,Seedling,NA,FRAAME,35,10,N,,N
+8/15/24,4,Bradbury Mountain,RW,2,Seedling,NA,PINSTR,8,3,N,,N
+8/15/24,4,Bradbury Mountain,RW,3,Seedling,NA,FRAAME,58,10,N,,N
+8/15/24,4,Bradbury Mountain,RW,3,Seedling,NA,PINSTR,3,2,N,,N
+8/15/24,4,Bradbury Mountain,RW,3,Herb,NA,OSMCLA,9,10,N,,N
+8/15/24,4,Bradbury Mountain,RW,4,Seedling,NA,FRAAME,49,10,N,,N
+8/15/24,4,Bradbury Mountain,RW,4,Seedling,NA,ACERUB,1,1,N,,N
+8/15/24,4,Bradbury Mountain,RW,4,Seedling,NA,PINSTR,8,4,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Herb,NA,ARANUD,3,20,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Herb,NA,GAUPRO,4,8,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Seedling,NA,ACERUB,9,5,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Seedling,NA,ACEPEN,2,3,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Herb,NA,DENOBS,8,10,N,,N
+9/8/24,1,Seboeis Lake,RW,1,Shrub,NA,VACMYR,2,3,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Herb,NA,GAUHIS,9,10,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Seedling,NA,ACERUB,8,3,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Herb,NA,DENOBS,1,4,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Herb,NA,LYCCLA,11,10,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Seedling,NA,ACEPEN,3,15,N,,N
+9/8/24,1,Seboeis Lake,RW,2,Herb,NA,MITREP,11,8,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,GAUPRO,65,15,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,DENOBS,2,8,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,LYCCLA,7,8,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,MAICAN,1,1,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Seedling,NA,ACERUB,10,5,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,CLIBOR,4,10,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Seedling,NA,ACEPEN,1,2,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Seedling,Hardwood,BETPOP,1,3,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,PTEAQU,1,20,N,,N
+9/8/24,1,Seboeis Lake,RW,3,Herb,NA,MITREP,19,10,N,,N
+9/8/24,1,Seboeis Lake,RW,4,Herb,NA,GAUPRO,29,15,N,,N
+9/8/24,1,Seboeis Lake,RW,4,Shrub,NA,VACMYR,2,15,N,,N
+9/8/24,1,Seboeis Lake,RW,4,Seedling,NA,ACERUB,12,5,N,,N
+9/8/24,1,Seboeis Lake,RW,4,Seedling,NA,ACEPEN,1,2,N,,N
+9/8/24,1,Seboeis Lake,RW,4,Herb,NA,MITREP,1,4,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Herb,NA,Viola sp.,4,2,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Seedling,Hardwood,FRAAME,2,15,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Seedling,NA,FRAAME,1,5,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Herb,NA,SYLAT,2,3,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Seedling,NA,BETALL,9,20,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Herb,NA,AMPBRA,21,1,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Graminoid,NA,Poaceae sp.,2,1,N,,N
+9/8/24,2,Seboeis Lake,RW,1,Herb,NA,LYSBOR,1,1,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Shrub,NA,VIBDEN,3,10,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Seedling,Hardwood,FRAAME,4,15,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Seedling,NA,FRAAME,10,10,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Seedling,NA,BETALL,2,8,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Herb,NA,ARITRI,1,3,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Herb,NA,SYLAT,2,5,N,,N
+9/8/24,2,Seboeis Lake,RW,2,Herb,NA,SCULAT,4,10,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Seedling,Hardwood,FRANIG,3,10,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Herb,NA,ONSE,18,40,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Seedling,NA,FRAAME,6,5,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Seedling,NA,POPGRA,2,3,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Herb,NA,MAICAN,6,8,N,,N
+9/8/24,2,Seboeis Lake,RW,3,Herb,NA,SYLAT,2,4,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Seedling,NA,BETALL,1,5,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Seedling,NA,FRAAME,9,8,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Herb,NA,ATHFIL,4,8,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Herb,NA,SYLAT,4,10,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Herb,NA,MAICAN,2,3,N,,N
+9/8/24,2,Seboeis Lake,RW,4,Seedling,NA,ABIBAL,1,1,N,,N
+9/8/24,3,Seboeis Lake,RW,1,Seedling,NA,ACERUB,1,1,N,,N
+9/8/24,3,Seboeis Lake,RW,2,NA,NA,NA,NA,NA,NA,,N
+9/8/24,3,Seboeis Lake,RW,3,NA,NA,NA,NA,NA,NA,,N
+9/8/24,3,Seboeis Lake,RW,4,Seedling,NA,ACERUB,7,4,N,,N
+9/14/24,1,Kennebec Public Land Trust,RW,1,NA,NA,NA,NA,NA,NA,,N
+9/14/24,1,Kennebec Public Land Trust,RW,2,Herb,NA,THENOV,18,15,N,,N
+9/14/24,1,Kennebec Public Land Trust,RW,2,Seedling,Softwood,TSUCAN,1,25,N,,N
+9/14/24,1,Kennebec Public Land Trust,RW,3,Herb,NA,MAICAN,11,8,N,,N
+9/14/24,1,Kennebec Public Land Trust,RW,3,Herb,NA,THENOV,23,25,N,,N
+9/14/24,1,Kennebec Public Land Trust,RW,4,NA,NA,NA,NA,NA,NA,,N
+9/14/24,2,Kennebec Public Land Trust,RW,1,Seedling,NA,QUERUB,1,5,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,1,Herb,NA,MAICAN,2,3,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,1,Seedling,NA,ACESAC,2,4,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,1,Herb,NA,CLACAR,1,1,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,2,Herb,NA,MAICAN,2,2,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,2,Seedling,NA,FAGGRA,4,10,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,2,Herb,NA,CLACAR,1,1,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,3,Seedling,NA,ACESAC,3,5,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,3,Herb,NA,MAICAN,1,1,N,,N
+9/14/24,2,Kennebec Public Land Trust,RW,4,Seedling,NA,ACESAC,3,4,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,1,Seedling,NA,FRAAME,3,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,1,Herb,NA,MAICAN,6,4,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,1,Herb,NA,DRYCAR,8,15,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,1,Herb,NA,TRIERE,2,2,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,1,Seedling,NA,QUERUB,1,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Herb,NA,DRYCAR,21,45,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Herb,NA,TRIERE,1,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Herb,NA,MAICAN,4,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Seedling,NA,FRAAME,1,1,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Seedling,NA,QUERUB,2,5,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,2,Herb,NA,OSMCIN,2,8,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Herb,NA,ONSE,5,10,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Seedling,NA,QUERUB,3,8,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Seedling,NA,ACESAC,1,1,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Herb,NA,Poaceae sp.,3,2,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Seedling,NA,FRAAME,2,2,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,3,Herb,NA,MAICAN,2,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,4,Seedling,NA,FRAAME,2,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,4,Herb,NA,TRIERE,4,8,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,4,Seedling,NA,QUERUB,2,7,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,4,Seedling,NA,PRUSER,1,3,N,,N
+9/14/24,3,Kennebec Public Land Trust,RW,4,Herb,NA,MAICAN,1,1,N,,N
+9/7/24,8,Colby Arboretum,RW,1,Herb,NA,ONSE,23,50,N,,N
+9/7/24,8,Colby Arboretum,RW,1,Seedling,NA,FRAAME,38,20,N,,N
+9/7/24,8,Colby Arboretum,RW,1,Seedling,NA,ACESAC,1,3,N,,N
+9/7/24,8,Colby Arboretum,RW,1,Shrub,NA,VIBDEN,1,2,N,,N
+9/7/24,8,Colby Arboretum,RW,2,Herb,NA,ONSE,35,50,N,,N
+9/7/24,8,Colby Arboretum,RW,2,Seedling,NA,FRAAME,66,15,N,,N
+9/7/24,8,Colby Arboretum,RW,2,Seedling,NA,QUERUB,1,4,N,,N
+9/7/24,8,Colby Arboretum,RW,3,Herb,NA,ONSE,2,10,N,,N
+9/7/24,8,Colby Arboretum,RW,3,Seedling,NA,FRAAME,55,15,N,,N
+9/7/24,8,Colby Arboretum,RW,3,Seedling,NA,PRUSER,3,10,N,,N
+9/7/24,8,Colby Arboretum,RW,3,Seedling,NA,QUERUB,1,5,N,,N
+9/7/24,8,Colby Arboretum,RW,4,Herb,NA,ONSE,12,10,N,,N
+9/7/24,8,Colby Arboretum,RW,4,Seedling,NA,FRAAME,54,20,N,,N
+9/7/24,8,Colby Arboretum,RW,4,Herb,NA,LYSBOR,1,2,N,,N
+9/7/24,8,Colby Arboretum,RW,4,Shrub,NA,VIBDEN,4,8,N,,N
+9/7/24,8,Colby Arboretum,RW,4,Woody Vine,NA,CELORB,2,4,Y,,N
+9/7/24,9,Colby Arboretum,RW,1,NA,NA,NA,NA,NA,NA,,N
+9/7/24,9,Colby Arboretum,RW,2,Herb,NA,OSMCIN,1,10,N,,N
+9/7/24,9,Colby Arboretum,RW,3,Herb,NA,OSMCIN,9,30,N,,N
+9/7/24,9,Colby Arboretum,RW,3,Herb,NA,ATHFIL,10,20,N,,N
+9/7/24,9,Colby Arboretum,RW,3,Herb,NA,ARITRI,1,4,N,,N
+9/7/24,9,Colby Arboretum,RW,4,Herb,NA,ATHFIL,2,10,N,,N
