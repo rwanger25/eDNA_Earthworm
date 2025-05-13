@@ -192,7 +192,7 @@ ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, richness, .des
   geom_bar(stat = "identity", aes(fill = Detected.European)) +
   coord_flip() +
   labs(x = "Plots",
-       y = "Richness") +
+       y = "Tree Richness") +
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
@@ -200,12 +200,42 @@ ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, richness, .des
   geom_bar(stat = "identity", aes(fill = worm_species)) +
   coord_flip() +
   labs(x = "Plots",
-       y = "Richness") +
+       y = "Tree Richness") +
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
+tree.richness <- ggplot(aes(x = Detected.European, y = richness), data = richness.tree) +
+  geom_boxplot() +
+  labs(x = "", #Worms Detected?
+       y = "Tree Richness") +
+  interactive_theme 
+
+
 #mann-whitney U test
 wilcox.test(richness ~ Detected.European, data=richness.tree, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+richness.tree.no.na <- na.omit(richness.tree)
+obs_diff <- with(richness.tree.no.na, mean(richness[Detected.European == "Y"]) - mean(richness[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(richness.tree.no.na$Detected.European)
+  mean(richness.tree.no.na$richness[shuffled == "Y"]) - mean(richness.tree.no.na$richness[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
 
 
 ## SAPLINGS
@@ -299,16 +329,36 @@ ggplot(aes(x = fct_reorder(saplings_abundance_table_joined.Plot.name, richness.s
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = richness.saplings), data = richness.saplings.df) +
+sapling.richness <- ggplot(aes(x = Detected.European, y = richness.saplings), data = richness.saplings.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "Richness") +
+  labs(x = "",
+       y = "Sapling Richness") + #Worms Detected?
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(richness.saplings ~ Detected.European, data=richness.saplings.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
 
+# Observed difference in means
+richness.saplings.no.na <- na.omit(richness.saplings.df)
+obs_diff <- with(richness.saplings.no.na, mean(richness.saplings[Detected.European == "Y"]) - mean(richness.saplings[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(richness.saplings.no.na$Detected.European)
+  mean(richness.saplings.no.na$richness.saplings[shuffled == "Y"]) - mean(richness.saplings.no.na$richness.saplings[shuffled == "N"])
+})
 
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
 
 
 ## QUADRAT
@@ -324,6 +374,10 @@ quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>%
     by = c("Site", "Plot")
   )
 
+#removing plots where herb data was collected in the fall
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names_w_invasives %>%
+  filter(!(quadrat_df_full_names_w_invasives$Date == "10/26/24"),
+         !(quadrat_df_full_names_w_invasives$Date == "11/22/24"))
 
 
 #1. creating abolute abundance tables 
@@ -402,14 +456,49 @@ ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, richness.qu
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = richness.quadrat), data = richness.quadrat.df) +
+herb.richness <- ggplot(aes(x = Detected.European, y = richness.quadrat), data = richness.quadrat.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "Richness") +
+  labs(x = "",
+       y = "Herbaceous Layer Plant Richness") + #Worms Detected?
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(richness.quadrat ~ Detected.European, data=richness.quadrat.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+# Observed difference in means
+richness.quadrat.no.na <- na.omit(richness.quadrat.df)
+obs_diff <- with(richness.quadrat.no.na, mean(richness.quadrat[Detected.European == "Y"]) - mean(richness.quadrat[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(richness.quadrat.no.na$Detected.European)
+  mean(richness.quadrat.no.na$richness.quadrat[shuffled == "Y"]) - mean(richness.quadrat.no.na$richness.quadrat[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+
+
+#arranging the boxplots
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Tree, Sapling, and Herb Richness by Earthworm Detection", gp = gpar(fontsize = 14, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 13, fontfamily = "DIN Alternate"))
+
+grid.arrange(tree.richness, sapling.richness, herb.richness,
+             ncol = 3, top = top_text, bottom = bottom_text)
+
 
 
 
@@ -453,14 +542,38 @@ ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, shannon_divers
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = shannon_diversity.tree), data = shannon.tree.df) +
+tree.shannon <- ggplot(aes(x = Detected.European, y = shannon_diversity.tree), data = shannon.tree.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "shannon") +
+  labs(x = "", #Worms Detected?
+       y = "Tree Shannon Diversity Index (H')") +
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(shannon_diversity.tree ~ Detected.European, data=shannon.tree.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+shannon_diversity.tree.no.na <- na.omit(shannon.tree.df)
+obs_diff <- with(shannon_diversity.tree.no.na, mean(shannon_diversity.tree[Detected.European == "Y"]) - mean(shannon_diversity.tree[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(shannon_diversity.tree.no.na$Detected.European)
+  mean(shannon_diversity.tree.no.na$shannon_diversity.tree[shuffled == "Y"]) - mean(shannon_diversity.tree.no.na$shannon_diversity.tree[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
 
 
 ## SAPLINGS
@@ -501,14 +614,37 @@ ggplot(aes(x = fct_reorder(saplings_abundance_table_joined.Plot.name, shannon_di
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = shannon_diversity.saplings), data = shannon.saplings.df) +
+sapling.shannon <- ggplot(aes(x = Detected.European, y = shannon_diversity.saplings), data = shannon.saplings.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "shannon") +
+  labs(x = "",
+       y = "Sapling Shannon Diversity Index (H')") +
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(shannon_diversity.saplings ~ Detected.European, data=shannon.saplings.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+shannon_diversity.saplings.no.na <- na.omit(shannon.saplings.df)
+obs_diff <- with(shannon_diversity.saplings.no.na, mean(shannon_diversity.saplings[Detected.European == "Y"]) - mean(shannon_diversity.saplings[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(shannon_diversity.saplings.no.na$Detected.European)
+  mean(shannon_diversity.saplings.no.na$shannon_diversity.saplings[shuffled == "Y"]) - mean(shannon_diversity.saplings.no.na$shannon_diversity.saplings[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
 
 
 
@@ -550,14 +686,50 @@ ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, shannon_div
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = shannon_diversity.quadrat), data = shannon.quadrat.df) +
+herb.shannon <- ggplot(aes(x = Detected.European, y = shannon_diversity.quadrat), data = shannon.quadrat.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "shannon") +
+  labs(x = "", #Worms Detected?
+       y = "Herbaceous Layer Shannon Diversity Index (H')") +
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(shannon_diversity.quadrat ~ Detected.European, data=shannon.quadrat.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+shannon_diversity.quadrat.no.na <- na.omit(shannon.quadrat.df)
+obs_diff <- with(shannon_diversity.quadrat.no.na, mean(shannon_diversity.quadrat[Detected.European == "Y"]) - mean(shannon_diversity.quadrat[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(shannon_diversity.quadrat.no.na$Detected.European)
+  mean(shannon_diversity.quadrat.no.na$shannon_diversity.quadrat[shuffled == "Y"]) - mean(shannon_diversity.quadrat.no.na$shannon_diversity.quadrat[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+
+#arranging the boxplots
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Tree, Sapling, and Herb Shannon Diversity Index by Earthworm Detection", gp = gpar(fontsize = 14, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 13, fontfamily = "DIN Alternate"))
+
+grid.arrange(tree.shannon, sapling.shannon, herb.shannon,
+             ncol = 3, top = top_text, bottom = bottom_text)
+
+
 
 
 ###species evenness
@@ -585,7 +757,7 @@ evenness.tree.df <- evenness.tree.df %>%
                                   Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
                                   TRUE ~ NA_character_))
 
-ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree, .desc = FALSE), y = evenness.tree), data = evenness.tree.df) +
+ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree.df, .desc = FALSE), y = evenness.tree), data = evenness.tree.df) +
   geom_bar(stat = "identity", aes(fill = Detected.European)) +
   coord_flip() +
   labs(x = "Plots",
@@ -593,7 +765,7 @@ ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree,
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree, .desc = FALSE), y = evenness.tree), data = evenness.tree.df) +
+ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree.df, .desc = FALSE), y = evenness.tree), data = evenness.tree.df) +
   geom_bar(stat = "identity", aes(fill = worm_species)) +
   coord_flip() +
   labs(x = "Plots",
@@ -601,14 +773,38 @@ ggplot(aes(x = fct_reorder(tree_abundance_table_joined.Plot.name, evenness.tree,
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = evenness.tree), data = evenness.df) +
+tree.evenness <- ggplot(aes(x = Detected.European, y = evenness.tree), data = evenness.tree.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "Species Evenness") +
+  labs(x = "", #Worms Detected?
+       y = "Tree Species Evenness (J)") +
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(evenness.tree ~ Detected.European, data=evenness.tree.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+evenness.tree.no.na <- na.omit(evenness.tree.df)
+obs_diff <- with(evenness.tree.no.na, mean(evenness.tree[Detected.European == "Y"]) - mean(evenness.tree[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(evenness.tree.no.na$Detected.European)
+  mean(evenness.tree.no.na$evenness.tree[shuffled == "Y"]) - mean(evenness.tree.no.na$evenness.tree[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
 
 
 #SAPLING
@@ -652,15 +848,37 @@ ggplot(aes(x = fct_reorder(saplings_abundance_table_joined.Plot.name, evenness.s
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = evenness.saplings), data = evenness.saplings.df) +
+sapling.eveness <- ggplot(aes(x = Detected.European, y = evenness.saplings), data = evenness.saplings.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "Species Evenness") +
+  labs(x = "", #Worms Detected?
+       y = "Sapling Species Evenness (J)") +
   interactive_theme 
 
 #mann-whitney U test
 wilcox.test(evenness.saplings ~ Detected.European, data=evenness.saplings.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
 
+
+# Observed difference in means
+evenness.saplings.no.na <- na.omit(evenness.saplings.df)
+obs_diff <- with(evenness.saplings.no.na, mean(evenness.saplings[Detected.European == "Y"]) - mean(evenness.saplings[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(evenness.saplings.no.na$Detected.European)
+  mean(evenness.saplings.no.na$evenness.saplings[shuffled == "Y"]) - mean(evenness.saplings.no.na$evenness.saplings[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
 
 
 #QUADRAT
@@ -703,15 +921,373 @@ ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, evenness.qu
   interactive_theme +
   theme(axis.text = element_text(size = 10))
 
-ggplot(aes(x = Detected.European, y = evenness.quadrat), data = evenness.quadrat.df) +
+herb.evenness <- ggplot(aes(x = Detected.European, y = evenness.quadrat), data = evenness.quadrat.df) +
   geom_boxplot() +
-  labs(x = "Worms Detected?",
-       y = "Species Evenness") +
+  labs(x = "",
+       y = "Herbaceous Layer Species Evenness (J)") +
   interactive_theme 
 
 
 #mann-whitney U test
 wilcox.test(evenness.quadrat ~ Detected.European, data=evenness.quadrat.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+evenness.quadrat.no.na <- na.omit(evenness.quadrat.df)
+obs_diff <- with(evenness.quadrat.no.na, mean(evenness.quadrat[Detected.European == "Y"]) - mean(evenness.quadrat[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(evenness.quadrat.no.na$Detected.European)
+  mean(evenness.quadrat.no.na$evenness.quadrat[shuffled == "Y"]) - mean(evenness.quadrat.no.na$evenness.quadrat[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+
+#arranging the boxplots
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Tree, Sapling, and Herb Pielou's Species Evenness Index by Earthworm Detection", gp = gpar(fontsize = 14, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 13, fontfamily = "DIN Alternate"))
+
+grid.arrange(tree.evenness, sapling.eveness, herb.evenness,
+             ncol = 3, top = top_text, bottom = bottom_text)
+
+
+
+
+
+
+
+
+### NON-NATIVE PLANTS 
+
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>% #making a data frame with the tree counts and the invasive worm information
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Detected.European), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Lumbricus.rubellus.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Lumbricus.terrestris.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Aporrectodea.caliginosa.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Contamination), by = c("Site", "Plot"))
+
+
+quadrat_df_full_names_invasives <- filter(quadrat_df_full_names_w_invasives, Invasive. == "Y")
+
+invasives.Species.table <- quadrat_df_full_names_invasives %>%
+  group_by(Species, Detected.European) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(Detected.European) %>%
+  mutate(prop = count / sum(count))
+
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>% 
+  left_join(
+    site_data_df_full_names_nanopore %>%
+      dplyr::select(Site, Plot, Detected.European, 
+                    Lumbricus.rubellus., 
+                    Lumbricus.terrestris., 
+                    Aporrectodea.caliginosa., 
+                    Contamination),
+    by = c("Site", "Plot")
+  )
+view(quadrat_df_full_names)
+
+
+#1. creating abolute abundance tables 
+invasive_df_full_names_w_invasives.abundances <- quadrat_df_full_names_invasives %>%
+  group_by(Plot, Site, Species) %>%
+  summarise(count = n(), .groups = "drop")
+# group_by(Plot, Site) %>%
+# mutate(prop = count / sum(count)) %>%
+# mutate(percent = prop*100)
+
+#pivoting the table so rows are plots and columns are each quadrat species
+invasive_abundance_table <- invasive_df_full_names_w_invasives.abundances %>%
+  pivot_wider(names_from = Species,   # Make quadrat species into columns
+              values_from = count,     # Fill cells with Abundance values
+              values_fill = 0)              # Fill missing values with 0
+
+#fixing the plot names
+invasive_abundance_table <- invasive_abundance_table %>%
+  mutate(Plot.name = paste0(Site, " ", Plot))  
+
+
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names_w_invasives %>%
+  mutate(Plot.name = paste0(Site, " ", Plot))  
+
+#adding whether the worms were detected to the abundance table
+
+invasive_abundance_table_joined <- invasive_abundance_table %>%
+  mutate(Detected.European = quadrat_df_full_names_w_invasives$Detected.European[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.rubellus. = quadrat_df_full_names_w_invasives$Lumbricus.rubellus.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.terrestris. = quadrat_df_full_names_w_invasives$Lumbricus.terrestris.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Aporrectodea.caliginosa. = quadrat_df_full_names_w_invasives$Aporrectodea.caliginosa.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)])
+
+#remove unnecessary columns
+invasive_abundance_table_joined.fixed <- invasive_abundance_table_joined %>%
+  select(c(!Site & !Plot & !Plot.name & !Detected.European & !Lumbricus.rubellus. & !Lumbricus.terrestris. & !Aporrectodea.caliginosa.))
+
+#turning it into a matrix
+invasive_matrix <- as.matrix(invasive_abundance_table_joined.fixed)
+Plot.name <- as.vector(invasive_abundance_table_joined$Plot.name)
+rownames(invasive_matrix) <- Plot.name
+
+
+# Example: calculate richness for each sample
+richness.invasive <- specnumber(invasive_matrix)
+richness.invasive.df <- data.frame(richness.invasive, invasive_abundance_table_joined$Plot.name)
+
+
+#adding the worm detections
+richness.invasive.df <- richness.invasive.df %>%
+  mutate(Detected.European = quadrat_df_full_names_w_invasives$Detected.European[match(invasive_abundance_table_joined.Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.rubellus. = quadrat_df_full_names_w_invasives$Lumbricus.rubellus.[match(invasive_abundance_table_joined.Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.terrestris. = quadrat_df_full_names_w_invasives$Lumbricus.terrestris.[match(invasive_abundance_table_joined.Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Aporrectodea.caliginosa. = quadrat_df_full_names_w_invasives$Aporrectodea.caliginosa.[match(invasive_abundance_table_joined.Plot.name, quadrat_df_full_names_w_invasives$Plot.name)])
+
+#adding an extra column for when both worms are present
+richness.invasive.df <- richness.invasive.df %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+ggplot(aes(x = fct_reorder(invasive_abundance_table_joined.Plot.name, richness.invasive, .desc = FALSE), y = richness.invasive), data = richness.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = Detected.European)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "Richness") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+
+ggplot(aes(x = fct_reorder(invasive_abundance_table_joined.Plot.name, richness.invasive, .desc = FALSE), y = richness.invasive), data = richness.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = worm_species)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "Richness") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+invasive.richness <- ggplot(aes(x = Detected.European, y = richness.invasive), data = richness.invasive.df) +
+  geom_boxplot() +
+  labs(x = "",
+       y = "Richness") + #Worms Detected?
+  interactive_theme 
+
+#mann-whitney U test
+wilcox.test(richness.invasive ~ Detected.European, data=richness.invasive.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+richness.invasive.no.na <- na.omit(richness.invasive.df)
+obs_diff <- with(richness.invasive.no.na, mean(richness.invasive[Detected.European == "Y"]) - mean(richness.invasive[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(richness.invasive.no.na$Detected.European)
+  mean(richness.invasive.no.na$richness.invasive[shuffled == "Y"]) - mean(richness.invasive.no.na$richness.invasive[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+
+#calculating shannon's H
+shannon_diversity.invasive <- diversity(invasive_matrix, index = "shannon")
+shannon.invasive.df <- data.frame(shannon_diversity.invasive, invasive_abundance_table_joined$Plot.name)
+
+#adding the worm detections
+shannon.invasive.df <- shannon.invasive.df %>%
+  mutate(Detected.European = quadrat_df_full_names_w_invasives$Detected.European[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.rubellus. = quadrat_df_full_names_w_invasives$Lumbricus.rubellus.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.terrestris. = quadrat_df_full_names_w_invasives$Lumbricus.terrestris.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Aporrectodea.caliginosa. = quadrat_df_full_names_w_invasives$Aporrectodea.caliginosa.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)])
+
+#adding an extra column for when both worms are present
+shannon.invasive.df <- shannon.invasive.df %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, shannon_diversity.invasive, .desc = FALSE), y = shannon_diversity.quadrat), data = shannon.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = Detected.European)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "shannon") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, shannon_diversity.invasive, .desc = FALSE), y = shannon_diversity.quadrat), data = shannon.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = worm_species)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "shannon") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+invasive.shannon <- ggplot(aes(x = Detected.European, y = shannon_diversity.invasive), data = shannon.invasive.df) +
+  geom_boxplot() +
+  labs(x = "", #Worms Detected?
+       y = "Shannon Diversity Index (H')") +
+  interactive_theme 
+
+#mann-whitney U test
+wilcox.test(shannon_diversity.invasive ~ Detected.European, data=shannon.invasive.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+shannon_diversity.invasive.no.na <- na.omit(shannon.invasive.df)
+obs_diff <- with(shannon_diversity.invasive.no.na, mean(shannon_diversity.invasive[Detected.European == "Y"]) - mean(shannon_diversity.invasive[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(shannon_diversity.invasive.no.na$Detected.European)
+  mean(shannon_diversity.invasive.no.na$shannon_diversity.invasive[shuffled == "Y"]) - mean(shannon_diversity.invasive.no.na$shannon_diversity.invasive[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+##evenness
+
+evenness.invasive <- shannon_diversity.invasive / log(richness.invasive.df$richness.invasive)
+evenness.invasive.df <- data.frame(evenness.invasive, invasive_abundance_table_joined$Plot.name)
+
+#replacing the infinites where the richness is 1 with 0 for evenness
+evenness.invasive.df$evenness.invasive[is.nan(evenness.invasive.df$evenness.invasive) == T] <- 0
+
+#adding the worm detections
+evenness.invasive.df <- evenness.invasive.df %>%
+  mutate(Detected.European = quadrat_df_full_names_w_invasives$Detected.European[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.rubellus. = quadrat_df_full_names_w_invasives$Lumbricus.rubellus.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Lumbricus.terrestris. = quadrat_df_full_names_w_invasives$Lumbricus.terrestris.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)]) %>%
+  mutate(Aporrectodea.caliginosa. = quadrat_df_full_names_w_invasives$Aporrectodea.caliginosa.[match(Plot.name, quadrat_df_full_names_w_invasives$Plot.name)])
+
+#adding an extra column for when both worms are present
+evenness.invasive.df <- evenness.invasive.df %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, evenness.invasive, .desc = FALSE), y = evenness.invasive), data = evenness.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = Detected.European)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "Species Evenness") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+ggplot(aes(x = fct_reorder(quadrat_abundance_table_joined.Plot.name, evenness.invasive, .desc = FALSE), y = evenness.invasive), data = evenness.invasive.df) +
+  geom_bar(stat = "identity", aes(fill = worm_species)) +
+  coord_flip() +
+  labs(x = "Plots",
+       y = "Species Evenness") +
+  interactive_theme +
+  theme(axis.text = element_text(size = 10))
+
+invasive.evenness <- ggplot(aes(x = Detected.European, y = evenness.invasive), data = evenness.invasive.df) +
+  geom_boxplot() +
+  labs(x = "",
+       y = "Pielou's Species Evenness Index (J)") +
+  interactive_theme 
+
+
+#mann-whitney U test
+wilcox.test(evenness.invasive ~ Detected.European, data=evenness.invasive.df, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+# Observed difference in means
+evenness.invasive.no.na <- na.omit(evenness.invasive.df)
+obs_diff <- with(evenness.invasive.no.na, mean(evenness.invasive[Detected.European == "Y"]) - mean(evenness.invasive[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(evenness.invasive.no.na$Detected.European)
+  mean(evenness.invasive.no.na$evenness.invasive[shuffled == "Y"]) - mean(evenness.invasive.no.na$evenness.invasive[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+#arranging the boxplots
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Non-Native Plant Species Diversity Metrics by Earthworm Detection", gp = gpar(fontsize = 14, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 13, fontfamily = "DIN Alternate"))
+
+grid.arrange(invasive.richness, invasive.shannon, invasive.evenness,
+             ncol = 3, top = top_text, bottom = bottom_text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -877,5 +1453,8 @@ model.dredge.choice.2 <- glm(Detected.European ~ shannon_diversity.quadrat,
                            family = binomial(link = "logit"))# control = glmerControl(optimizer = "nlminb", optCtrl = list(maxeval = 10000))#
 
 summary(model.dredge.choice.2)
+
+
+
 
 
