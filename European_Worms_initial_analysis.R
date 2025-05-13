@@ -45,8 +45,8 @@ quadrat_df_full_names <- quadrat_df %>% #quadrat species data
 #making a theme
 interactive_theme <- theme_bw() +# White background, black and white theme
   theme(plot.title = element_text(family = "Georgia", face = "bold", size = 20),
-        axis.title = element_text(family = "DIN Alternate", size = 18),
-        axis.text = element_text(size = 14),
+        axis.title = element_text(family = "DIN Alternate", size = 12),
+        axis.text = element_text(size = 12),
         legend.title = element_text(family = "DIN Alternate", face = "bold", size = 14),
         legend.text = element_text(family = "DIN Alternate", size = 14),
         legend.box.margin = margin(6, 6, 6, 6))
@@ -120,9 +120,9 @@ site_data_df_full_names_euro.chem <- soil_chem_df_euro %>%
 
 
 #soil ph
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = soil_pH)) +
+soil.ph <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = soil_pH)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Soil pH") +
+  labs(x = "",y = "Soil pH") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -154,9 +154,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 
 #buffer pH
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = buffer_pH)) +
+buffer.ph <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = buffer_pH)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Buffer pH") +
+  labs(x = "",y = "Buffer pH") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -189,9 +189,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #organic matter
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = OM....)) +
+om.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = OM....)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "OM (%)") +
+  labs(x = "", y = "OM (%)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -224,9 +224,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #NO3.N..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = NO3.N..mg.kg.)) +
+no3.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = NO3.N..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Nitrate (mg/kg)") +
+  labs(x = "", y = "Nitrate (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -258,9 +258,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #NH4.N..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = NH4.N..mg.kg.)) +
+nh4.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = NH4.N..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Ammonium (mg/kg)") +
+  labs(x = "", y = "Ammonium (mg/kg)") + #x = "Invasive Earthworms?") 
   interactive_theme
 
 #test
@@ -293,9 +293,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #P..lb.A.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = P..lb.A.)) +
+phos.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = P..lb.A.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Phosphorus (lb/A)") +
+  labs(x = "", y = "Phosphorus (lb/A)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -328,9 +328,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #K..lb.A.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = K..lb.A.)) +
+pot.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = K..lb.A.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Potassium (lb/A)") +
+  labs(x = "", y = "Potassium (lb/A)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -363,9 +363,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Mg..lb.A
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mg..lb.A)) +
+mag.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mg..lb.A)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Magnessium (lb/A)") +
+  labs(x = "", y = "Magnessium (lb/A)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -398,9 +398,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Ca..lb.A
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Ca..lb.A)) +
+calc.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Ca..lb.A)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Calcium (lb/A)") +
+  labs(x = "", y = "Calcium (lb/A)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -433,9 +433,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Al..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Al..mg.kg.)) +
+all.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Al..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Alumnium (mg/kg)") +
+  labs(x = "", y = "Aluminum (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -468,9 +468,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #B..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = B..mg.kg.)) +
+boron.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = B..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Phosphorus (mg/kg)") +
+  labs(x = "", y = "Boron (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -503,9 +503,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Cu..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Cu..mg.kg.)) +
+copper.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Cu..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Copper (mg/kg)") +
+  labs(x = "", y = "Copper (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -538,9 +538,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Fe..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Fe..mg.kg.)) +
+iron.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Fe..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Iron (mg/kg)") +
+  labs(x = "", y = "Iron (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -573,9 +573,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Mn..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mn..mg.kg.)) +
+magn.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mn..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Manganese (mg/kg)") +
+  labs(x = "", y = "Manganese (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -608,9 +608,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Na..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Na..mg.kg.)) +
+sodium.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Na..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Sodium (mg/kg)") +
+  labs(x = "", y = "Sodium (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -641,9 +641,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #S..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = S..mg.kg.)) +
+sulfur.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = S..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Sulfur (mg/kg)") +
+  labs(x = "", y = "Sulfur (mg/kg)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -676,9 +676,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Zn..mg.kg.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Zn..mg.kg.)) +
+zinc.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Zn..mg.kg.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Zinc (mg/kg)") +
+  labs(x = "", y = "Zinc (mg/kg)") +#x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -710,9 +710,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #ECEC..me.100g.
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = ECEC..me.100g.)) +
+ecec.boxplot <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = ECEC..me.100g.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Effective Cation Exchange Capacity (me/100g)") +
+  labs(x = "", y = "ECEC (me/100g)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -745,9 +745,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #K....
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = K....)) +
+potas.percent <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = K....)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Phosphorus (%)") +
+  labs(x = "", y = "Potassium (%)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -780,9 +780,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Mg....
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mg....)) +
+mag.perc <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Mg....)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Magnesium (%)") +
+  labs(x = "", y = "Magnesium (%)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -816,9 +816,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Ca....
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Ca....)) +
+calc.perc <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Ca....)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Calcium (%)") +
+  labs(x = "", y = "Calcium (%)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -850,9 +850,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #Acidity....
 
-ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Acidity....)) +
+acidity.perc <- ggplot(data = site_data_df_full_names_euro.chem, aes(x = European.Worms, y = Acidity....)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Phosphorus (%)") +
+  labs(x = "", y = "Acidity (%)") + #x = "Invasive Earthworms?"
   interactive_theme
 
 #test
@@ -881,6 +881,148 @@ cat("Observed difference:", obs_diff, "\n")
 cat("Permutation p-value:", p_val, "\n")
 
 
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Soil Chemistry Values by Earthworm Detection", gp = gpar(fontsize = 18, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 15, fontfamily = "DIN Alternate"))
+
+
+grid.arrange(soil.ph,buffer.ph, om.boxplot, zinc.boxplot, 
+             iron.boxplot, phos.boxplot, 
+             mag.boxplot, calc.boxplot, all.boxplot, boron.boxplot, 
+             copper.boxplot, magn.boxplot, pot.boxplot, no3.boxplot, 
+             nh4.boxplot, sodium.boxplot, 
+             sulfur.boxplot, ecec.boxplot, potas.percent, 
+             mag.perc, calc.perc, acidity.perc, 
+             bottom = bottom_text, 
+             top = top_text)
+
+
+# mean soil chemistry values by area
+site_data_df_full_names_euro.chem.table <- site_data_df_full_names_euro.chem %>%
+  group_by(European.Worms) %>%
+  summarise(n = n(),
+    
+            mean.soil.ph = mean(soil_pH),
+            sd.soil_pH= sd(soil_pH, na.rm = TRUE),
+            ci95.low.soil.ph = mean.soil.ph - 1.96 * sd.soil_pH / sqrt(n),
+            ci95.high.soil.ph = mean.soil.ph + 1.96 * sd.soil_pH / sqrt(n),
+            
+            mean.buffer_pH = mean(buffer_pH),
+            sd.buffer_pH = sd(buffer_pH, na.rm = TRUE),
+            ci95.low.buffer_pH= mean.buffer_pH - 1.96 * sd.buffer_pH / sqrt(n),
+            ci95.high.buffer_pH = mean.buffer_pH + 1.96 * sd.buffer_pH / sqrt(n),
+            
+            mean.OM.... = mean(OM....),
+            sd.OM.... = sd(OM...., na.rm = TRUE),
+            ci95.low.OM.... = mean.OM.... - 1.96 * sd.OM.... / sqrt(n),
+            ci95.high.OM.... = mean.OM.... + 1.96 * sd.OM.... / sqrt(n),
+            
+            mean.Zn..mg.kg. = mean(Zn..mg.kg.),
+            sd.Zn..mg.kg. = sd(Zn..mg.kg., na.rm = TRUE),
+            ci95.low.Zn..mg.kg. = mean.Zn..mg.kg. - 1.96 * sd.Zn..mg.kg. / sqrt(n),
+            ci95.high.Zn..mg.kg. = mean.Zn..mg.kg. + 1.96 * sd.Zn..mg.kg. / sqrt(n),
+            
+            mean.Fe..mg.kg. = mean(Fe..mg.kg.),
+            sd.Fe..mg.kg. = sd(Fe..mg.kg., na.rm = TRUE),
+            ci95.Fe..mg.kg. = mean.Fe..mg.kg. - 1.96 * sd.Fe..mg.kg. / sqrt(n),
+            ci95.high.Fe..mg.kg. = mean.Fe..mg.kg. + 1.96 * sd.Fe..mg.kg. / sqrt(n),
+            
+            mean.P..lb.A. = mean(P..lb.A.),
+            sd.P..lb.A. = sd(P..lb.A., na.rm = TRUE),
+            ci95.low.P..lb.A. = mean.P..lb.A. - 1.96 * sd.P..lb.A. / sqrt(n),
+            ci95.high.P..lb.A. = mean.P..lb.A. + 1.96 * sd.P..lb.A. / sqrt(n),
+            
+            mean.Mg..lb.A = mean(Mg..lb.A),
+            sd.Mg..lb.A = sd(Mg..lb.A, na.rm = TRUE),
+            ci95.low.Mg..lb.A = mean.Mg..lb.A - 1.96 * sd.Mg..lb.A / sqrt(n),
+            ci95.high.Mg..lb.A = mean.Mg..lb.A + 1.96 * sd.Mg..lb.A / sqrt(n),
+            
+            mean.Ca..lb.A = mean(Ca..lb.A),
+            sd.Ca..lb.A = sd(Ca..lb.A, na.rm = TRUE),
+            ci95.low.Ca..lb.A = mean.Ca..lb.A - 1.96 * sd.Ca..lb.A / sqrt(n),
+            ci95.high.Ca..lb.A = mean.Ca..lb.A + 1.96 * sd.Ca..lb.A / sqrt(n),
+            
+            mean.Al..mg.kg.= mean(Al..mg.kg.),
+            sd.Al..mg.kg. = sd(Al..mg.kg., na.rm = TRUE),
+            ci95.low.Al..mg.kg. = mean.Al..mg.kg. - 1.96 * sd.Al..mg.kg. / sqrt(n),
+            ci95.high.Al..mg.kg. = mean.Al..mg.kg. + 1.96 * sd.Al..mg.kg. / sqrt(n),
+            
+            mean.B..mg.kg. = mean(B..mg.kg.),
+            sd.B..mg.kg. = sd(B..mg.kg., na.rm = TRUE),
+            ci95.low.B..mg.kg. = mean.B..mg.kg. - 1.96 * sd.B..mg.kg. / sqrt(n),
+            ci95.high.B..mg.kg. = mean.B..mg.kg. + 1.96 * sd.B..mg.kg. / sqrt(n),
+            
+            mean.Cu..mg.kg. = mean(Cu..mg.kg.),
+            sd.Cu..mg.kg. = sd(Cu..mg.kg., na.rm = TRUE),
+            ci95.low.Cu..mg.kg. = mean.Cu..mg.kg. - 1.96 * sd.Cu..mg.kg. / sqrt(n),
+            ci95.high.Cu..mg.kg. = mean.Cu..mg.kg. + 1.96 * sd.Cu..mg.kg. / sqrt(n),
+            
+            mean.Mn..mg.kg. = mean(Mn..mg.kg.),
+            sd.Mn..mg.kg. = sd(Mn..mg.kg., na.rm = TRUE),
+            ci95.low.Mn..mg.kg. = mean.Mn..mg.kg. - 1.96 * sd.Mn..mg.kg. / sqrt(n),
+            ci95.high.Mn..mg.kg. = mean.Mn..mg.kg. + 1.96 * sd.Mn..mg.kg. / sqrt(n),
+            
+            mean.K..lb.A. = mean(K..lb.A.),
+            sd.K..lb.A. = sd(K..lb.A., na.rm = TRUE),
+            ci95.low.K..lb.A. = mean.K..lb.A. - 1.96 * sd.K..lb.A. / sqrt(n),
+            ci95.high.K..lb.A. = mean.K..lb.A. + 1.96 * sd.K..lb.A. / sqrt(n),
+            
+            mean.NO3.N..mg.kg. = mean(NO3.N..mg.kg., na.rm = TRUE),
+            sd.NO3.N..mg.kg. = sd(NO3.N..mg.kg., na.rm = TRUE),
+            ci95.low.NO3.N..mg.kg. = mean.NO3.N..mg.kg. - 1.96 * sd.NO3.N..mg.kg. / sqrt(n),
+            ci95.high.NO3.N..mg.kg. = mean.NO3.N..mg.kg. + 1.96 * sd.NO3.N..mg.kg. / sqrt(n),
+            
+            mean.NH4.N..mg.kg. = mean(NH4.N..mg.kg.),
+            sd.NH4.N..mg.kg. = sd(NH4.N..mg.kg., na.rm = TRUE),
+            ci95.low.NH4.N..mg.kg. = mean.NH4.N..mg.kg. - 1.96 * sd.NH4.N..mg.kg. / sqrt(n),
+            ci95.high.NH4.N..mg.kg. = mean.NH4.N..mg.kg. + 1.96 * sd.NH4.N..mg.kg. / sqrt(n),
+            
+            mean.Na..mg.kg. = mean(Na..mg.kg.),  
+            sd.Na..mg.kg. = sd(Na..mg.kg., na.rm = TRUE),
+            ci95.low.Na..mg.kg. = mean.Na..mg.kg. - 1.96 * sd.Na..mg.kg. / sqrt(n),
+            ci95.high.Na..mg.kg. = mean.Na..mg.kg. + 1.96 * sd.Na..mg.kg. / sqrt(n),
+            
+            mean.S..mg.kg. = mean(S..mg.kg.),
+            sd.S..mg.kg. = sd(S..mg.kg., na.rm = TRUE),
+            ci95.low.S..mg.kg. = mean.S..mg.kg. - 1.96 * sd.S..mg.kg. / sqrt(n),
+            ci95.high.S..mg.kg. = mean.S..mg.kg. + 1.96 * sd.S..mg.kg. / sqrt(n),
+            
+            mean.ECEC..me.100g. = mean(ECEC..me.100g.), 
+            sd.ECEC..me.100g. = sd(ECEC..me.100g., na.rm = TRUE),
+            ci95.low.ECEC..me.100g. = mean.ECEC..me.100g. - 1.96 * sd.ECEC..me.100g. / sqrt(n),
+            ci95.high.ECEC..me.100g. = mean.ECEC..me.100g. + 1.96 * sd.ECEC..me.100g. / sqrt(n),
+            
+            mean.K.... = mean(K....),
+            sd.K.... = sd(K...., na.rm = TRUE),
+            ci95.low.K.... = mean.K.... - 1.96 * sd.K.... / sqrt(n),
+            ci95.high.K.... = mean.K.... + 1.96 * sd.K.... / sqrt(n),
+            
+            mean.Mg.... = mean(Mg....),  
+            sd.Mg.... = sd(Mg...., na.rm = TRUE),
+            ci95.low.Mg.... = mean.Mg.... - 1.96 * sd.Mg.... / sqrt(n),
+            ci95.high.Mg.... = mean.Mg.... + 1.96 * sd.Mg.... / sqrt(n),
+            
+            mean.Ca.... = mean(Ca....), 
+            sd.Ca.... = sd(Ca...., na.rm = TRUE),
+            ci95.low.Ca.... = mean.Ca.... - 1.96 * sd.Ca.... / sqrt(n),
+            ci95.high.Ca.... = mean.Ca.... + 1.96 * sd.Ca.... / sqrt(n),
+            
+            mean.Acidity.... = mean(Acidity....),
+            sd.Acidity.... = sd(Acidity...., na.rm = TRUE),
+            ci95.low.Acidity.... = mean.Acidity.... - 1.96 * sd.Acidity.... / sqrt(n),
+            ci95.high.Acidity.... = mean.Acidity.... + 1.96 * sd.Acidity.... / sqrt(n),
+  )
+
+
+
+
+
+
+
+
+
+
 
 ## other soil characteristics
 
@@ -890,7 +1032,11 @@ soil.drainage.table <- site_data_df_full_names_nanopore %>%
   group_by(drainage, Detected.European) %>%
   summarise(count = n(), .groups = "drop") %>%
   group_by(Detected.European) %>%
-  mutate(prop = count / sum(count))
+  mutate(prop = count / sum(count),
+         total = sum(count),
+         se = sqrt(prop * (1 - prop) / total),
+         ci95.low = prop - 1.96 * se,
+         ci95.high = prop + 1.96 * se) 
 
 site_data_df_full_names_nanopore %>%
   mutate(drainage = fct_relevel(drainage, c("Poor", "Moderate", "Well"))) %>%
@@ -906,17 +1052,26 @@ site_data_df_full_names_nanopore %>%
 
 
 #FIX
+soil.drainage.table$ci95.high
 soil.drainage.table %>%
   mutate(drainage = fct_relevel(drainage, c("Poor", "Moderate", "Well"))) %>%
-  ggplot(aes(x = drainage, fill = European.Worms)) +
+  ggplot(aes(x = drainage)) +
   geom_bar(aes(y = prop, fill = drainage), stat = "identity", color = "#281E5D") +
   scale_fill_manual(values = c("#43270f", "#7C4700", "#997950")) +
   labs(x = "Soil Drainage",
        y = "Proportion",
-       title = "Proportion of Soil Drainage Types",
-       fill = "Soil Drainage") +
+       title = "Proportion of Soil Drainage Types by Earthworm Detection",
+       fill = "Soil Drainage", 
+       subtitle = "Error Bars Represent 95% Confidence Intervals") +
   interactive_theme + 
-  facet_grid(. ~ Detected.European)
+  theme(plot.title = element_text(size = 15)) +
+  geom_errorbar(aes(ymin = ci95.low, ymax = ci95.high)) +
+  facet_grid(. ~ Detected.European, labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected"
+  )))
+
+
 
 mantelhaen.test(table(site_data_df_full_names_nanopore$drainage,
                       site_data_df_full_names_nanopore$Detected.European,
@@ -967,7 +1122,11 @@ soil.moisture.table <- site_data_df_full_names_nanopore %>%
   group_by(soil.moisture, Detected.European) %>%
   summarise(count = n(), .groups = "drop") %>%
   group_by(Detected.European) %>%
-  mutate(prop = count / sum(count))
+  mutate(prop = count / sum(count),
+         total = sum(count),
+         se = sqrt(prop * (1 - prop) / total),
+         ci95.low = prop - 1.96 * se,
+         ci95.high = prop + 1.96 * se) 
 
 ggplot(data = site_data_df_full_names_nanopore, aes(x = soil.moisture)) +
   geom_bar(aes(fill = soil.moisture), color = "#281E5D") +
@@ -984,10 +1143,19 @@ ggplot(data = soil.moisture.table, aes(x = soil.moisture)) +
   scale_fill_manual(values = c("#0492C2", "#ADD8E6")) +
   labs(x = "Soil Moisture",
        y = "Proportion",
-       title = "Proportion of Soil Moisture Types",
-       fill = "Soil Moisture") +
+       title = "Proportion of Soil Moisture Types by Earthworm Detection",
+       fill = "Soil Moisture",
+       subtitle = "Error Bars Represent 95% Confidence Intervals") +
   interactive_theme + 
-  facet_grid(. ~ Detected.European)
+  geom_errorbar(aes(ymin = ci95.low, ymax = ci95.high)) +
+  theme(plot.title = element_text(size = 15)) +
+  facet_grid(. ~ Detected.European, labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected"
+  )))
+
+
+
 
 
 # Observed proportions
@@ -1033,9 +1201,9 @@ mantelhaen.test(table(site_data_df_full_names_nanopore$soil.moisture,
 
 # leaf litter
 
-ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = avg.litter.cover)) +
+leaf.litter <- ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = avg.litter.cover)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Average Litter Cover (%)") +
+  labs(x = "", y = "Average Litter Cover (%)") + #Invasive Earthworms?
   interactive_theme
 
 #test
@@ -1069,9 +1237,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #litter depth
 
-ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = litter.depth..cm.)) +
+litter.depth <- ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = litter.depth..cm.)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Litter Depth (cm)") +
+  labs(x = "", y = "Litter Depth (cm)") + #Invasive Earthworms?
   interactive_theme
 
 #test
@@ -1105,9 +1273,9 @@ cat("Permutation p-value:", p_val, "\n")
 
 #herb cover
 
-ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = Herbaceous.Layer...Cover)) +
+herb.cover <- ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = Herbaceous.Layer...Cover)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Herbaceous Layer Cover (%)") +
+  labs(x = "", y = "Herbaceous Layer Cover (%)") + #Invasive Earthworms?
   interactive_theme
 
 #test
@@ -1142,11 +1310,57 @@ cat("Permutation p-value:", p_val, "\n")
 # temp
 ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = Temp.C)) +
   geom_boxplot() +
-  labs(x = "Invasive Earthworms?", y = "Temperature (ºC)") +
+  labs(x = "", y = "Temperature (ºC)") + #
   interactive_theme
 
 #test
 wilcox.test(Temp.C ~ Detected.European, data=site_data_df_full_names_nanopore, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+
+#crown density
+crown.density <- ggplot(data = site_data_df_full_names_nanopore, aes(x = Detected.European, y = Crown.Density)) +
+  geom_boxplot() +
+  labs(x = "", y = "Crown Density (%)") + #Invasive Earthworms?
+  interactive_theme
+
+#test
+wilcox.test(Crown.Density ~ Detected.European, data=site_data_df_full_names_nanopore, correct=FALSE, exact = F)  #have to use the correct = 5 bc data was below 50 and there are ties
+
+
+
+# Observed difference in means
+obs_diff <- with(site_data_df_full_names_nanopore, mean(Crown.Density[Detected.European == "Y"]) - mean(Crown.Density[Detected.European == "N"]))
+# Permutation test
+set.seed(123)
+n_perm <- 10000
+perm_diffs <- replicate(n_perm, {
+  shuffled <- sample(site_data_df_full_names_nanopore$Detected.European)
+  mean(site_data_df_full_names_nanopore$Crown.Density[shuffled == "Y"]) - mean(site_data_df_full_names_nanopore$Crown.Density[shuffled == "N"])
+})
+
+# Two-sided p-value
+p_val <- mean(abs(perm_diffs) >= abs(obs_diff))
+p_val
+
+# Output
+hist(perm_diffs, main="Permutation Null Distribution", xlab="Difference in Means")
+abline(v = obs_diff, col = "red", lwd = 2)
+abline(v = -obs_diff, col = "red", lwd = 2)
+cat("Observed difference:", obs_diff, "\n")
+cat("Permutation p-value:", p_val, "\n")
+
+
+#arranging the boxplots
+library(grid)
+# Create custom text grobs for top and bottom
+top_text <- textGrob("Distribution of Litter and Vegetation Coverage by Earthworm Detection", gp = gpar(fontsize = 14, fontfamily = "Georgia", fontface = "bold"))
+bottom_text <- textGrob("Invasive Earthworms?", gp = gpar(fontsize = 13, fontfamily = "DIN Alternate"))
+
+grid.arrange(leaf.litter, litter.depth, herb.cover, 
+             crown.density, bottom = bottom_text, 
+             top = top_text)
+
 
 
 ## Looking at plants
@@ -1208,10 +1422,15 @@ ggplot(data = tree.Species.table.top.5.prop, aes(x = reorder(Species, +prop), y 
   geom_col(fill = "#7C4700") +
   labs(x = "Tree Species",
        y = "Proportion",
-       title = "Tree Species Counts Across Plots by Invasive Species Detection") +
+       title = "Tree Species Proportions Across Plots by Earthworm Detection") +
   interactive_theme +
+  theme(plot.title = element_text(size = 15)) +
   coord_flip() +
-  facet_grid(Detected.European ~ .)
+  facet_grid(Detected.European ~ ., labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected",
+    "NA" = "DNA Not Sequenced"
+  ))) 
   
 #theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
@@ -1251,13 +1470,21 @@ ggplot(data = sapling.Species.table.top.5.prop, aes(x = reorder(Species, +prop),
   geom_col(fill = "#7C4700") +
   labs(x = "Sapling Species",
        y = "Proportion",
-       title = "Sapling Species Counts Across Plots by Invasive Species Detection") +
+       title = "Sapling Species Proportions Across Plots by Earthworm Detection") +
   interactive_theme +
+  theme(plot.title = element_text(size = 15)) +
   coord_flip() +
-  facet_grid(Detected.European ~ .)
+  facet_grid(Detected.European ~ ., labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected",
+    "NA" = "DNA Not Sequenced"
+  ))) 
+
 
 ##herbaceous plants
 herb_counts <- summarize(group_by(quadrat_df_full_names, Species), count = sum(Count), prop = count/nrow(quadrat_df_full_names))
+
+
 
 quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>% #making a data frame with the tree counts and the invasive worm information
   left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Detected.European), by = c("Site", "Plot")) %>%
@@ -1265,6 +1492,11 @@ quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>% #making a data fr
   left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Lumbricus.terrestris.), by = c("Site", "Plot")) %>%
   left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Aporrectodea.caliginosa.), by = c("Site", "Plot")) %>%
   left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Contamination), by = c("Site", "Plot"))
+
+#removing plots where herb data was collected in the fall
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names_w_invasives %>%
+  filter(!(quadrat_df_full_names_w_invasives$Date == "10/26/24"),
+         !(quadrat_df_full_names_w_invasives$Date == "11/22/24"))
 
 quadrat.Species.table <- quadrat_df_full_names_w_invasives %>%
   group_by(Species, Detected.European) %>%
@@ -1288,24 +1520,34 @@ ggplot(data = quadrat.Species.table.top.5.prop, aes(x = reorder(Species, +prop),
   geom_col(fill = "#7C4700") +
   labs(x = "Herb Species",
        y = "Proportion",
-       title = "Herb Species Counts Across Plots by Invasive Species Detection") +
+       title = "Herb Species Proportions Across Plots by Earthworm Detection") +
   interactive_theme +
+  theme(plot.title = element_text(size = 15)) +
   coord_flip() +
-  facet_grid(Detected.European ~ .)
+  facet_grid(Detected.European ~ ., labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected",
+    "NA" = "DNA Not Sequenced"
+  ))) 
 
 
 ##invasive plants
 
-quadrat_df_full_names_invasives <- filter(quadrat_df_full_names_w_invasives, Invasive. == "Y")
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names %>% #making a data frame with the tree counts and the invasive worm information
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Detected.European), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Lumbricus.rubellus.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Lumbricus.terrestris.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Aporrectodea.caliginosa.), by = c("Site", "Plot")) %>%
+  left_join(site_data_df_full_names_nanopore %>% dplyr::select(Site, Plot, Contamination), by = c("Site", "Plot"))
 
+
+quadrat_df_full_names_invasives <- filter(quadrat_df_full_names_w_invasives, Invasive. == "Y")
 
 invasives.Species.table <- quadrat_df_full_names_invasives %>%
   group_by(Species, Detected.European) %>%
   summarise(count = n(), .groups = "drop") %>%
   group_by(Detected.European) %>%
   mutate(prop = count / sum(count))
-
-
 
 
 ggplot(data = invasives.Species.table, aes(x = reorder(Species, +count), y = count)) +
@@ -1323,8 +1565,26 @@ ggplot(data = invasives.Species.table, aes(x = reorder(Species, +count), y = cou
        title = "Non-Native Species Counts Across Plots") +
   interactive_theme +
   coord_flip()+
-  facet_grid(Detected.European ~ .)
+  facet_grid(Detected.European ~ ., labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected",
+    "NA" = "DNA Not Sequenced"
+  ))) 
 
+ggplot(data = invasives.Species.table, aes(x = reorder(Species, +prop), y = prop)) +
+  geom_col(fill = "#7C4700") +
+  geom_col(fill = "#7C4700") +
+  labs(x = "Non-Native Species",
+       y = "Frequency",
+       title = "Non-Native Species Proportion Across Plots by Earthworm Detection") +
+  interactive_theme +
+  theme(plot.title = element_text(size = 15)) +
+  coord_flip() +
+  facet_grid(Detected.European ~ ., labeller = labeller(Detected.European = c(
+    "Y" = "European Worms: Detected",
+    "N" = "European Worms: Not Detected",
+    "NA" = "DNA Not Sequenced"
+  ))) 
 
 
 # NMDS
@@ -1513,19 +1773,23 @@ nmds_input <- soil_chem_df %>%
   mutate(across(everything(), ~ ifelse(is.na(.) | . < 0, 0, .)))       # Replace NA and negatives with 0
 View(data.matrix)
 data.matrix <- as.matrix(nmds_input)
-rownames(data.matrix) <- c("Colby 1", "Colby 2", "Colby 3", "Colby 4", "Colby 5", "Colby 6", "Colby 7", "Colby 8",
-                           "Colby 9", "Seboeis Lake 1", "Seboeis Lake 2",
-                           "Seboeis Lake 3", "Androscoggin Riverlands 1", "Androscoggin Rverlands 2",
+rownames(data.matrix) <- c("Colby Arboretum 1", "Colby Arboretum 2", "Colby Arboretum 3", 
+                           "Colby Arboretum 4", "Colby Arboretum 5", "Colby Arboretum 6", 
+                           "Colby Arboretum 7", "Colby Arboretum 8",
+                           "Colby Arboretum 9", "Seboeis Lake 1", "Seboeis Lake 2",
+                           "Seboeis Lake 3", "Androscoggin Riverlands 1", "Androscoggin Riverlands 2",
                            "Androscoggin Riverlands 3", "Androscoggin Riverlands 4", "Kennebec Highlands 1", 
-                           "Kennebec Highlands 2", "Kennebec Highlands 3", "Kennebec Highlands 4", "Kennebec Pubic Land Trust 1",
-                           "Kennebec Pubic Land Trust 2", 
-                           "Kennebec Pubic Land Trust 3","Viles Aboretum 1", "Viles Aboretum 2", "Viles Aboretum 3",
-                           "Bigelow 1", "Bigelow 2", "Bigelow 3","Bigelow 4",  "Bradbury 1", "Bradbury 2", "Bradbury 3", "Bradbury 4",
+                           "Kennebec Highlands 2", "Kennebec Highlands 3", "Kennebec Highlands 4", "Kennebec Public Land Trust 1",
+                           "Kennebec Public Land Trust 2", 
+                           "Kennebec Public Land Trust 3","Viles Arboretum 1", "Viles Arboretum 2", "Viles Arboretum 3",
+                           "Bigelow 1", "Bigelow 2", "Bigelow 3","Bigelow 4",  "Bradbury Mountain 1", "Bradbury Mountain 2", 
+                           "Bradbury Mountain 3", "Bradbury Mountain 4",
                            "Bradley 1", "Bradley 2", "Falmouth Land Trust 1",  "Falmouth Land Trust 2", 
                            "Falmouth Land Trust 3", "Colby Hume 1", "Little Moose 1", "Little Moose 2", "Little Moose 3", 
                            "Little Moose 4", "Mahoosuc 1", "Mahoosuc 2", "Mahoosuc 3", "Mahoosuc 4",
-                           "Sebago Lake 1", "Sebago Lake 2", "Sebago Lake 3", "Scopan Lake 1", "Scopan Lake 2","Coastal Maine Botanical Gardens 1", 
-                           "Coastal Maine Botanical Gardens 2", "Coastal Maine Botanical Gardens 3")
+                           "Sebago Lake 1", "Sebago Lake 2", "Sebago Lake 3", "Scopan Lake 1", "Scopan Lake 2",
+                           "Coastal Botanical Gardens 1", 
+                           "Coastal Botanical Gardens 2", "Coastal Botanical Gardens 3")
 data.matrix <- scale(data.matrix)
 
 set.seed(123)
@@ -1554,24 +1818,138 @@ nmds_scores$Site <- rownames(nmds_scores)
 # For now, just the Site names.
 
 soil_chem_df.worm <- soil_chem_df %>%
-  mutate(worm_species = case_when(soil_chem_df$Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
-                                  soil_chem_df$Lumbricus.terrestris. == "Y" ~ "Lumbricus terrestris",
-                                  soil_chem_df$Aporrectodea.caliginosa. == "Y" ~ "Aporrectodea caliginosa", 
-                                  soil_chem_df$Aporrectodea.caliginosa. == "N" ~ "No Worms Detetected"))
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+
+# get worm presence   
+detected_type <- soil_chem_df.worm %>% 
+  distinct(Site, Plot, European.Worms) %>%
+  mutate(Site = paste0(Site, " ", Plot))
+
+# Extract NMDS scores for sites 
+nmds_SiteScores <-
+  # get nmds scores 
+  as.data.frame(scores(nmds)) %>% #nmds_scores$Site
+  # change rownames (site) to a column 
+  rownames_to_column(var = "Site") %>%
+  # join our habitat type (grouping variable) to each site 
+  left_join(detected_type, by = "Site")
+
+# Extract NMDS scores for species  
+nmds_SpeciesScores <- as.data.frame(scores(nmds, "species"))
+
+# create a column of species, from the rownames of species.scores
+nmds_SpeciesScores$species <- rownames(nmds_SpeciesScores) 
+
+# get centroid 
+chemistry_Centroid <- 
+  nmds_SiteScores %>% 
+  group_by(European.Worms) %>% 
+  summarise(axis1 = mean(NMDS1),
+            axis2 = mean(NMDS2)) %>% 
+  ungroup()
+
+# extract convex hull
+chemistry.hull <- 
+  nmds_SiteScores %>% 
+  group_by(European.Worms) %>%
+  slice(chull(NMDS1, NMDS2))
+
 
 
 # Step 2: Make the ggplot
-ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2, label = Site)) + #label = Site
+ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
+  geom_point(data = chemistry_Centroid, 
+             aes(x = axis1, y = axis2, color = European.Worms), 
+             size = 5, shape = 17) +
+  geom_label(aes(label = Site)) +
+  # add convex hull
+  geom_polygon(data = chemistry.hull, 
+               aes(x = NMDS1, y = NMDS2, fill = European.Worms, group = European.Worms), 
+               alpha = 0.30) +
+  geom_point(size = 2, aes(col = soil_chem_df.worm$European.Worms)) + #shape = site_data_df_full_names_euro.chem.worm$Site
+  #geom_text_repel(size = 2.5) +
+  #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
+  theme_minimal() +
+  labs(title = "NMDS of Plot Chemistry Characteristics by Earthworm Detection",
+       x = "NMDS1",
+       y = "NMDS2", 
+       color = "Worms Detected?", 
+       fill = "Worms Detected?") +
+  annotate("text", x = Inf, y = -Inf, label = paste0("Stress = ", round(nmds$stress, 3)), 
+           hjust = 1.1, vjust = -1.1, size = 3) +
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  # add centroid 
+  scale_color_manual(values  = c("#fee5d9","#fcae91", "#fb6a4a", "#cb181d", "#000000")) +
+  scale_fill_manual(values  = c("#fee5d9","#fcae91", "#fb6a4a", "#cb181d", "#000000"))
+
+
+# get worm presence   
+worm_type <- soil_chem_df.worm %>% 
+  distinct(Site, Plot, worm_species) %>%
+  mutate(Site = paste0(Site, " ", Plot))
+
+# Extract NMDS scores for sites 
+nmds_SiteScores <-
+  # get nmds scores 
+  as.data.frame(scores(nmds)) %>%
+  # change rownames (site) to a column 
+  rownames_to_column(var = "Site") %>%
+  # join our habitat type (grouping variable) to each site 
+  left_join(worm_type, by = "Site")
+
+# Extract NMDS scores for species  
+nmds_SpeciesScores <- 
+  as.data.frame(scores(nmds, "species"))
+
+# create a column of species, from the rownames of species.scores
+nmds_SpeciesScores$species <- rownames(nmds_SpeciesScores) 
+
+# get centroid 
+worm_Centroid <- 
+  nmds_SiteScores %>% 
+  group_by(worm_species) %>% 
+  summarise(axis1 = mean(NMDS1),
+            axis2 = mean(NMDS2)) %>% 
+  ungroup()
+
+# extract convex hull
+worn.hull <- 
+  nmds_SiteScores %>% 
+  group_by(worm_species) %>%
+  slice(chull(NMDS1, NMDS2))
+
+
+# Step 2: Make the ggplot
+ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
+  geom_point(data = worm_Centroid, 
+             aes(x = axis1, y = axis2, color = worm_species), 
+             size = 5, shape = 17) +
+  # add convex hull
+  geom_polygon(data = worn.hull, 
+               aes(x = NMDS1, y = NMDS2, fill = worm_species, group = worm_species), 
+               alpha = 0.30) +
   geom_point(size = 2, aes(col = soil_chem_df.worm$worm_species)) + #shape = site_data_df_full_names_euro.chem.worm$Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Chemistry Characteristics",
+  labs(title = "NMDS of Plot Chemistry Characteristics by Earthworm Species",
        x = "NMDS1",
        y = "NMDS2", 
-       color = "Worms Detected?") +
+       color = "Worms Detected?",
+       fill = "Worms Detected?") +
+  annotate("text", x = Inf, y = -Inf, label = paste0("Stress = ", round(nmds$stress, 3)), 
+           hjust = 1.1, vjust = -1.1, size = 3) +
   theme(plot.title = element_text(hjust = 0.5)) + 
-  scale_color_manual(values  = c("#ffeda5","#feb24c", "#f03b20", "#000000"))
+  scale_color_manual(values  = c("#fee5d9","#fcae91", "#fb6a4a", "#cb181d", "#000000")) +
+  scale_fill_manual(values  = c("#fee5d9","#fcae91", "#fb6a4a", "#cb181d", "#000000"))
+
+
 
 
 # Assuming you have your NMDS object `nmds`
@@ -1585,6 +1963,82 @@ print(envfit_results)
 # Plot arrows for environmental variables:
 plot(nmds, display = "sites")
 plot(envfit_results, p.max = 0.05)  # only show variables with p < 0.05
+
+
+#PERMANOVA
+
+nmds_input <- site_data_df_full_names_euro.chem %>%
+  dplyr::select(where(is.numeric)) %>%                                 # Keep only numeric columns
+  mutate(across(everything(), ~ ifelse(is.na(.) | . < 0, 0, .)))       # Replace NA and negatives with 0
+
+
+data.matrix <- as.matrix(nmds_input)
+rownames(data.matrix) <- c(site_data_df_full_names$Plot_Full_Name)
+rownames(data.matrix) <- c("Colby 1", "Colby 2", "Colby 3", "Colby 4", "Colby 5", "Colby 6", "Colby 7", "Colby 8",
+                           "Colby 9", "Seboeis Lake 3", "Androscoggin Rverlands 2","Kennebec Highlands 1", 
+                           "Kennebec Highlands 2", "Kennebec Highlands 4", "Kennebec Pubic Land Trust 1",
+                           "Kennebec Pubic Land Trust 3","Viles Aboretum 1", "Viles Aboretum 2", "Viles Aboretum 3",
+                           "Bigelow 1", "Bigelow 4",  "Bradbury 1", "Bradbury 2", "Bradley 2", "Falmouth Land Trust 1", 
+                           "Falmouth Land Trust 3", "Colby Hume 1", "Little Moose 3", "Little Moose 4", "Mahoosuc 2",
+                           "Sebago Lake 1", "Sebago Lake 2", "Scopan Lake 2","Coastal Maine Botanical Gardens 1", 
+                           "Coastal Maine Botanical Gardens 2", "Coastal Maine Botanical Gardens 3")
+
+
+soil_chem_df.worm <- soil_chem_df %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+
+soil_chem_df.worm.tested <- soil_chem_df.worm[is.na(soil_chem_df.worm$European.Worms) == F, ]
+
+
+#remove unnecessary columns
+soil_chem_df.worm.fixed <- soil_chem_df.worm.tested %>%
+  select(c(!ME_Lab_. & !Sample_ID & !Contamination & !Site & !Plot & !European.Worms & !worm_species & !Lumbricus.rubellus. & !Lumbricus.terrestris. & !Aporrectodea.caliginosa.))
+
+
+
+site_data_df_full_names_euro.chem <- site_data_df_full_names_euro.chem %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+View(data.matrix)
+
+data.matrix[-c(23, 33),] #removing bradbury 2 and scopan lake 2
+
+site_data_df_full_names_euro.chem$worm_species[-c(23, 33)]  #removing bradbury 2 and scopan lake 2
+
+#comparison between locations with different worm species
+adonis_result <- adonis2(data.matrix~ site_data_df_full_names_euro.chem$worm_species, na.rm = T, 
+                         method = "euclidean")
+print(adonis_result)
+
+#with outliers removed
+adonis_result <- adonis2(data.matrix[-c(23, 33),] ~ site_data_df_full_names_euro.chem$worm_species[-c(23, 33)], na.rm = T, 
+                         method = "euclidean")
+print(adonis_result)
+
+#comparison between locations with and without worms
+adonis_result <- adonis2(tree_matrix.rel ~ site_data_df_full_names_euro.chem$European.Worms, na.rm = T,
+                         method = "euclidean")
+print(adonis_result)
+
+
+
+
+
+
+
+
+
 
 
 ### NMDS with plant composition 
@@ -1726,7 +2180,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Tree Abundances",
+  labs(title = "NMDS of Plot Tree Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected?", 
@@ -1788,7 +2242,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Tree Abundances",
+  labs(title = "NMDS of Plot Tree Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected?",
@@ -1993,7 +2447,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Sapling Abundances",
+  labs(title = "NMDS of Plot Sapling Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected?",
@@ -2055,7 +2509,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Sapling Abundances",
+  labs(title = "NMDS of Plot Sapling Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected", 
@@ -2097,6 +2551,7 @@ saplings_abundance_table.fixed <- saplings_abundance_table_joined.tested %>%
 #turning it into a matrix
 sapling_matrix <- as.matrix(saplings_abundance_table.fixed)
 Plot.name <- as.vector(saplings_abundance_table_joined.tested$Plot.name)
+
 rownames(sapling_matrix) <- Plot.name
 
 #turning absolute abundance into relative abundance to avoid skewness
@@ -2127,6 +2582,10 @@ print(adonis_result)
 
 ## HERBS / QUADRAT
 
+#removing plots where herb data was collected in the fall
+quadrat_df_full_names_w_invasives <- quadrat_df_full_names_w_invasives %>%
+  filter(!(quadrat_df_full_names_w_invasives$Date == "10/26/24"),
+         !(quadrat_df_full_names_w_invasives$Date == "11/22/24"))
 
 #1. creating abolute abundance tables 
 quadrat_df_full_names_w_invasives.abundances <- quadrat_df_full_names_w_invasives %>%
@@ -2263,7 +2722,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Herb Abundances",
+  labs(title = "NMDS of Plot Herb Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected?",
@@ -2325,7 +2784,7 @@ ggplot(nmds_scores, aes(x = NMDS1, y = NMDS2)) + #label = Site
   #geom_text_repel(size = 2.5) +
   #geom_text(vjust = -1, hjust = -1, size = 2, position = position_dodge(1.2)) +
   theme_minimal() +
-  labs(title = "NMDS of Plot Herb Abundances",
+  labs(title = "NMDS of Plot Herb Relative Abundances",
        x = "NMDS1",
        y = "NMDS2", 
        color = "Worms Detected", 
@@ -2389,6 +2848,149 @@ print(adonis_result)
 #comparison between locations with and without worms
 adonis_result <- adonis2(quadrat_matrix.rel ~ quadrat_abundance_table_joined.worm$Detected.European, na.rm = T)
 print(adonis_result)
+
+
+
+#table in results
+
+
+
+#mean average leaf litter
+View(site_data_df_full_names_euro.chem.worm)
+View(site_data_df_full_names)
+mean(site_data_df_full_names)
+
+site_data_df_full_names.table <- site_data_df_full_names %>%
+  group_by(Detected.European) %>%
+  summarise(
+    n = n(),
+    
+    mean.leaf.cover = mean(avg.litter.cover, na.rm = TRUE),
+    sd.leaf.cover = sd(avg.litter.cover, na.rm = TRUE),
+    ci95.low.leaf.cover = mean.leaf.cover - 1.96 * sd.leaf.cover / sqrt(n),
+    ci95.high.leaf.cover = mean.leaf.cover + 1.96 * sd.leaf.cover / sqrt(n),
+    
+    mean.litter.depth = mean(litter.depth..cm., na.rm = TRUE),
+    sd.litter.depth = sd(litter.depth..cm., na.rm = TRUE),
+    ci95.low.litter.depth = mean.litter.depth - 1.96 * sd.litter.depth / sqrt(n),
+    ci95.high.litter.depth = mean.litter.depth + 1.96 * sd.litter.depth / sqrt(n),
+    
+    mean.crown.density = mean(Crown.Density, na.rm = TRUE),
+    sd.crown.density = sd(Crown.Density, na.rm = TRUE),
+    ci95.low.crown.density = mean.crown.density - 1.96 * sd.crown.density / sqrt(n),
+    ci95.high.crown.density = mean.crown.density + 1.96 * sd.crown.density / sqrt(n),
+    
+    mean.herb.cover = mean(Herbaceous.Layer...Cover, na.rm = TRUE),
+    sd.herb.cover = sd(Herbaceous.Layer...Cover, na.rm = TRUE),
+    ci95.low.herb.cover = mean.herb.cover - 1.96 * sd.herb.cover / sqrt(n),
+    ci95.high.herb.cover = mean.herb.cover + 1.96 * sd.herb.cover / sqrt(n)
+  )
+
+
+#drainage classes
+site_data_df_full_names.table.prop <- site_data_df_full_names %>%
+  group_by(Detected.European, drainage) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(Detected.European) %>%
+  mutate(
+    total = sum(count),
+    prop = count / total,
+    se = sqrt(prop * (1 - prop) / total),
+    ci95.low = prop - 1.96 * se,
+    ci95.high = prop + 1.96 * se
+  )
+
+#moisture  
+site_data_df_full_names.table.prop <- site_data_df_full_names %>%
+  group_by(Detected.European, soil.moisture) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(Detected.European) %>%
+  mutate(
+    total = sum(count),
+    prop = count / total,
+    se = sqrt(prop * (1 - prop) / total),
+    ci95.low = prop - 1.96 * se,
+    ci95.high = prop + 1.96 * se
+  )
+
+
+
+# by worm species 
+
+site_data_df_full_names <- site_data_df_full_names %>%
+  mutate(worm_species = case_when(Lumbricus.rubellus. == "Y" ~ "Lumbricus rubellus",
+                                  (Aporrectodea.caliginosa. == "N" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris",
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "N") ~ "Aporrectodea caliginosa", 
+                                  (Aporrectodea.caliginosa. == "Y" & Lumbricus.terrestris. == "Y") ~ "Lumbricus terrestris and Aporrectodea caliginosa",
+                                  Lumbricus.rubellus. == "N" & Lumbricus.terrestris. == "N" & Aporrectodea.caliginosa. == "N" ~ "No Worms Detected",
+                                  TRUE ~ NA_character_))
+
+
+
+site_data_df_full_names.table.species <- site_data_df_full_names %>%
+  group_by(worm_species) %>%
+  summarise(
+    n = n(),
+    
+    mean.leaf.cover = mean(avg.litter.cover, na.rm = TRUE),
+    sd.leaf.cover = sd(avg.litter.cover, na.rm = TRUE),
+    ci95.low.leaf.cover = mean.leaf.cover - 1.96 * sd.leaf.cover / sqrt(n),
+    ci95.high.leaf.cover = mean.leaf.cover + 1.96 * sd.leaf.cover / sqrt(n),
+    
+    mean.litter.depth = mean(litter.depth..cm., na.rm = TRUE),
+    sd.litter.depth = sd(litter.depth..cm., na.rm = TRUE),
+    ci95.low.litter.depth = mean.litter.depth - 1.96 * sd.litter.depth / sqrt(n),
+    ci95.high.litter.depth = mean.litter.depth + 1.96 * sd.litter.depth / sqrt(n),
+    
+    mean.crown.density = mean(Crown.Density, na.rm = TRUE),
+    sd.crown.density = sd(Crown.Density, na.rm = TRUE),
+    ci95.low.crown.density = mean.crown.density - 1.96 * sd.crown.density / sqrt(n),
+    ci95.high.crown.density = mean.crown.density + 1.96 * sd.crown.density / sqrt(n),
+    
+    mean.herb.cover = mean(Herbaceous.Layer...Cover, na.rm = TRUE),
+    sd.herb.cover = sd(Herbaceous.Layer...Cover, na.rm = TRUE),
+    ci95.low.herb.cover = mean.herb.cover - 1.96 * sd.herb.cover / sqrt(n),
+    ci95.high.herb.cover = mean.herb.cover + 1.96 * sd.herb.cover / sqrt(n)
+  )
+
+
+#drainage classes
+site_data_df_full_names.table.prop <- site_data_df_full_names %>%
+  group_by(worm_species, drainage) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(worm_species) %>%
+  mutate(
+    total = sum(count),
+    prop = count / total,
+    se = sqrt(prop * (1 - prop) / total),
+    ci95.low = prop - 1.96 * se,
+    ci95.high = prop + 1.96 * se
+  )
+
+#moisture  
+site_data_df_full_names.table.prop <- site_data_df_full_names %>%
+  group_by(worm_species, soil.moisture) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  group_by(worm_species) %>%
+  mutate(
+    total = sum(count),
+    prop = count / total,
+    se = sqrt(prop * (1 - prop) / total),
+    ci95.low = prop - 1.96 * se,
+    ci95.high = prop + 1.96 * se
+  )
+
+
+#sites by detection
+site_data_df_full_names <- site_data_df_full_names %>%
+  mutate(Plot.name = paste0(Site, " ", Plot))  
+
+table(site_data_df_full_names$Plot.name, 
+          site_data_df_full_names$worm_species)
+
+
+
+
 
 
 
